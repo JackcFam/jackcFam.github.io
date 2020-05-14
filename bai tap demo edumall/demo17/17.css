@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.tren {
+    color: white;
+    margin: 10px;
+    width: 920px;
+}
+
+.layer2 {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    background-color: #00000047;
+    padding: 20px;
+    width: 1300px;
+
+}
+
+img.layer1 {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.silde {
+    width: 920px;
+    height: 516px;
+    position: relative;
+    overflow: hidden;
+}

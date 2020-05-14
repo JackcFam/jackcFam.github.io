@@ -1,0 +1,42 @@
+* {}
+
+
+a.linkkhac {
+    background-image: url(image/1.png);
+    display: block;
+    text-decoration: none;
+    color: #ef00ff;
+    font-family: tahoma;
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: 347px top;
+    padding-left: 369px;
+}
+
+p {
+    font-family: tahoma;
+    font-size: 13px;
+    margin: 11px 0;
+    line-height: 20px;
+}
+
+a.tieude {
+    text-decoration: none;
+    font-weight: bold;
+    color: #B5346F;
+    font-size: 14px;
+    font-family: tahoma;
+}
+
+acticle._1tiin {
+    width: 625px;
+    height: 220px;
+}
+
+img {
+    width: 325px;
+    float: left;
+    margin-right: 20px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //bai 1
+      function isNumber(a, b) {
+        if (typeof a == "number" || typeof b == "number") {
+          alert("a hoac b la so");
+        } else {
+          alert("không có cái nào là số ");
+        }
+      }
+
+      // bai2
+      //
+      //
+      function giaiThua(x) {
+        let ketQua = 1;
+        if (x >= 0 && x - Math.round(x) == 0 && typeof x == "number") {
+          for (let i = 1; i <= x; i++) {
+            ketQua *= i;
+            return ketQua;
+          }
+        } else {
+          console.log("khong ton tai giai thua");
+        }
+      }
+      // hetbai3
+      function soChan(arr) {
+        let ketQua = arr.sort(function (a, b) {
+          return b - a;
+        });
+        return ketQua.filter(function (number) {
+          return number % 2 === 0;
+        });
+      }
+
+      //bai3a
+      function vongLap(arr) {
+        const string = "Techmaster";
+        for (const key of string);
+      }
+      //bai4
+      function kiemTra(obj) {}
+    </script>
+  </body>
+</html>
