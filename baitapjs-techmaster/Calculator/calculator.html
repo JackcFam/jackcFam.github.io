@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator DOM HTML</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <img
+      id="slideshow"
+      src="images/a1.jpg"
+      style="height: 100%; width: 100%;"
+      name="slideshow"
+    />
+    <script>
+      let arr = [
+        "images/a1.jpg",
+        "images/a5.jpg",
+        "images/a13.jpg",
+        "images/a4.jpg",
+        "images/a6.jpg",
+        "images/a7.jpg",
+        "images/a3.jpg",
+        "images/a9.jpg",
+        "images/a10.jpg",
+        "images/a12.jpg",
+      ];
+      let indexSlide = 0; // chi so
+      function slideshows() {
+        document.getElementById("slideshow").src = arr[indexSlide];
+        indexSlide++;
+        if (indexSlide === arr.length) {
+          indexSlide = 0;
+        }
+        setTimeout("slideshows()", 3000);
+      }
+      slideshows();
+    </script>
+  </body>
+</html>
