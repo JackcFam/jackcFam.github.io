@@ -1,5 +1,174 @@
 * {
   padding: 0;
   margin: 0;
-  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+}
+
+.tren {
+  max-width: 1350px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+span.time-update-tin-nho {
+  font-family: tahoma;
+  font-size: 13px;
+  color: #000000a1;
+  display: block;
+  float: right;
+  padding-right: 10px;
+}
+
+.thongtin2 {
+  margin: 10px 0;
+  width: 100%;
+  height: 116px;
+  border: 1px solid gray;
+  box-shadow: 0 2px 3px gray;
+  border-radius: 4px;
+}
+
+a.anh-tin-nho {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  /* text-align: justify; */
+}
+
+p.review-content {
+  font-family: tahoma;
+  font-size: 15px;
+  display: block;
+  text-align: justify;
+  padding: 10px;
+}
+
+span.time-update {
+  display: block;
+  color: violet;
+  margin: 10px 10px 10px 10px;
+}
+
+a.tieude.tinto {
+  text-decoration: none;
+  color: black;
+  /* line-height: 169px; */
+  display: block;
+  font: 700 14px/20px tahoma;
+  padding: 7px;
+  text-align: justify;
+}
+
+a.anh-tin-to {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
+a.anh-tin-to img {
+  width: 213px;
+  height: 140px;
+  border-radius: 4px;
+}
+
+.thongtin1 {
+  height: auto;
+  width: 100%;
+  background-color: #FFFFFF;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  box-shadow: 0px 2px 3px gray;
+}
+
+.tinTuc-small {
+  width: 380px;
+  height: 518px;
+  float: left;
+  margin: 52px 10px 20px 10px;
+}
+
+.name-content {
+  display: inline-block;
+}
+
+.name-content:hover a {
+  color: #C4C4C4;
+}
+
+.dieu-huong {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  top: 50%;
+  padding-left: 20px;
+  display: none;
+}
+
+.dieu-huong i:last-child {
+  position: relative;
+  left: 693px;
+}
+
+.transform-slide {
+  width: 9999px;
+  /* margin-left: -1607px; */
+  transition: all 0.6s ease
+}
+
+img {
+  width: 800px;
+  height: 518px;
+}
+
+.anh-tin-nho img {
+  width: 118px;
+  height: 114px;
+  border-radius: 4px;
+}
+
+.slide {
+  width: 800px;
+  /* height: 480px; */
+  overflow: hidden;
+  margin: 50px 20px 20px 0px;
+  margin-top: 50px;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0px 2px 3px gray;
+  float: left;
+}
+
+.slide:hover .dieu-huong {
+  display: block;
+}
+
+.title-content {
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'DM Mono',
+    monospace;
+  color: #FFFFFF;
+  font-size: 40px;
+}
+
+
+header.page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  background-color: #34465C;
+  margin: 0 auto;
+  box-shadow: 0px 4px 4px #6495ed8f;
+  border-radius: 4px;
 }

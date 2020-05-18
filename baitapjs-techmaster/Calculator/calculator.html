@@ -5,37 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator DOM HTML</title>
     <link rel="stylesheet" href="calculator.css" />
+    <link rel="stylesheet" href="fonts/css/all.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <img
-      id="slideshow"
-      src="images/a1.jpg"
-      style="height: 100%; width: 100%;"
-      name="slideshow"
-    />
+    <!-- header content -->
+    <header class="page-header">
+      <div class="name-content">
+        <a href="#" class="title-content">Calculator</a>
+      </div>
+    </header>
+    <!-- end header content -->
+    <div class="tren">
+      <div class="slide">
+        <div class="dieu-huong">
+          <i class="fas fa-chevron-circle-left" onclick="back();"></i>
+          <i class="fas fa-chevron-circle-right" onclick="loadAnh();"></i>
+        </div>
+        <div class="transform-slide">
+          <img src="images/a1.jpg" alt="anh banner" />
+          <img src="images/a2.jpg" alt="anh banner" />
+          <img src="images/a3.jpg" alt="anh banner" />
+          <img src="images/a4.jpg" alt="anh banner" />
+        </div>
+      </div>
+      <!-- ket thuc slideshows -->
+
+      <div class="tinTuc-small">
+        <div class="thongtin1">
+          <a href="#" class="anh-tin-to">
+            <img src="a5.jpg" alt="anh tin to"
+          /></a>
+
+          <a class="tieude tinto" href="#">
+            20% dân số thế giới mắc hội chứng lo âu khi học Toán, nếu nằm trong
+            số này bạn cần lưu tâm ngay những điều sau đây để cải thiện
+          </a>
+          <span class="time-update"
+            ><strong>Cập nhật</strong> - 5 ngày trước</span
+          >
+          <p class="review-content">
+            Đã bao giờ bạn cảm thấy căng thẳng, toát mồ hôi hột, tim đập loạn xạ
+            bất chấp lúc bị thầy cô gọi lên bảng hay không thể tập ...
+          </p>
+        </div>
+        <!-- het thongtin1 -->
+        <div class="thongtin2">
+          <a href="#" class="anh-tin-nho"
+            ><img src="a7.jpg" alt="anh-tin-nho"
+          /></a>
+          <a class="tieude tinto" href="#"
+            >Bị bắt giải bài Toán siêu khó khi đăng nhập vào trang web, dân mạng
+            đồng thanh: Thà làm robot còn hơn!</a
+          >
+          <span class="time-update-tin-nho"
+            ><strong>Học đường</strong> - 17 ngày trước</span
+          >
+        </div>
+        <!-- het tin 2 -->
+        <div class="thongtin2">
+          <a href="#" class="anh-tin-nho"
+            ><img src="a9.jpg" alt="anh-tin-nho"
+          /></a>
+          <a class="tieude tinto" href="#"
+            >Có mẹ là nội trợ kiêm “cao thủ” toán học, anh chàng được giảng bài
+            3D bằng… miếng đậu phụ: Đỉnh vậy cũng nghĩ ra?</a
+          >
+          <span class="time-update-tin-nho"
+            ><strong>Ăn-Quẩy-Đi</strong> - 1 tháng trước</span
+          >
+        </div>
+        <!-- het tin 2 -->
+      </div>
+    </div>
+    <!-- het phan tren -->
+
+    <div class="phanGiua"></div>
+
     <script>
-      let arr = [
-        "images/a1.jpg",
-        "images/a5.jpg",
-        "images/a13.jpg",
-        "images/a4.jpg",
-        "images/a6.jpg",
-        "images/a7.jpg",
-        "images/a3.jpg",
-        "images/a9.jpg",
-        "images/a10.jpg",
-        "images/a12.jpg",
-      ];
-      let indexSlide = 0; // chi so
-      function slideshows() {
-        document.getElementById("slideshow").src = arr[indexSlide];
-        indexSlide++;
-        if (indexSlide === arr.length) {
-          indexSlide = 0;
+      let kichThuoc = document.getElementsByClassName("slide")[0].clientWidth;
+      let chuyen = 0;
+      let chuyenSlide = document.getElementsByClassName("transform-slide")[0];
+      let img = chuyenSlide.getElementsByTagName("img");
+      let Max = kichThuoc * img.length;
+      Max -= kichThuoc;
+      function loadAnh() {
+        if (chuyen < Max) {
+          chuyen += kichThuoc;
+        } else {
+          chuyen = 0;
         }
-        setTimeout("slideshows()", 3000);
+        chuyenSlide.style.marginLeft = `-${chuyen}px`;
       }
-      slideshows();
+      function back() {
+        if (chuyen === 0) {
+          chuyen = Max;
+        } else {
+          chuyen -= kichThuoc;
+        }
+        chuyenSlide.style.marginLeft = `-${chuyen}px`;
+      }
+      setInterval(function () {
+        loadAnh();
+      }, 3000);
     </script>
   </body>
 </html>
