@@ -4,8 +4,108 @@
   box-sizing: border-box;
 }
 
+.phanGiua {
+  width: 100%;
+  height: 738px;
+  background-color: #E4F2FD;
+
+}
+
+.btn {
+  display: block;
+  float: left;
+  width: 87px;
+  height: 61px;
+  margin: 4px;
+  font-family: 'DM Mono',
+    monospace;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 4px;
+
+}
+
+.buttons {
+  width: 100%;
+  display: grid;
+  max-height: 75%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1px 1px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+input#answer {
+  border: 1px solid lightgray;
+  width: 100%;
+  height: 50px;
+  padding: 7px;
+  border-top: 1px solid transparent;
+  text-align: right;
+  font-size: 20px;
+  font-family: tahoma;
+}
+
+.answer-calculator {
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+.operation {
+  width: 100%;
+  padding: 7px;
+  text-align: right;
+  color: gray;
+  height: 34px;
+  border: 1px solid lightgray;
+  border-bottom: 1px solid transparent;
+  font-size: 20px;
+  font-family: tahoma;
+}
+
+#btn_bang {
+  color: white;
+  background: #ff0000d9;
+}
+
+.main {
+  max-width: 409px;
+  height: 100%;
+}
+
+.calculator-body {
+  max-width: 409px;
+  height: 565px;
+  border: 1px solid gray;
+  margin: 10px auto;
+  box-shadow: 1px 4px 4px grey;
+  border-radius: 7px;
+  padding: 1%;
+  background-color: #ffffff;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  flex-flow: nowrap;
+  align-items: center;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  color: cadetblue;
+  margin-top: 75px;
+  font-size: 28px;
+  font-family: 'DM Mono',
+    monospace;
+  padding: 25px 0;
+}
+
 body {
-  margin: auto;
+  /* margin: auto; */
+  width: 100%;
+  height: 100%;
 }
 
 .tren {
@@ -77,6 +177,7 @@ a.anh-tin-to img {
   width: 213px;
   height: 140px;
   border-radius: 4px;
+  margin: 5px 0 0 5px;
 }
 
 .thongtin1 {
