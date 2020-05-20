@@ -1,156 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calculator DOM HTML</title>
-  <link rel="stylesheet" href="calculator.css" />
-  <link rel="stylesheet" href="fonts/css/all.css" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Indie+Flower&display=swap"
-    rel="stylesheet" />
-</head>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Calculator DOM HTML</title>
+    <link href="calculator.css" rel="stylesheet"/>
+    <link href="fonts/css/all.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Indie+Flower&display=swap" rel="stylesheet"/>
+  </head>
 
-<body>
-  <!-- header content -->
-  <header class="page-header">
-    <div class="name-content">
-      <a href="#" class="title-content">Calculator</a>
-    </div>
-  </header>
-  <!-- end header content -->
-  <div class="tren">
-    <div class="slide">
-      <div class="dieu-huong">
-        <i class="fas fa-chevron-circle-left" onclick="back();"></i>
-        <i class="fas fa-chevron-circle-right" onclick="loadAnh();"></i>
+  <body>
+    <!-- header content -->
+    <header class="page-header">
+      <div class="name-content">
+        <a class="title-content" href="#">Calculator</a>
       </div>
-      <div class="transform-slide">
-        <img src="images/a1.jpg" alt="anh banner" />
-        <img src="images/a2.jpg" alt="anh banner" />
-        <img src="images/a3.jpg" alt="anh banner" />
-        <img src="images/a4.jpg" alt="anh banner" />
-      </div>
-    </div>
-    <!-- ket thuc slideshows -->
-
-    <div class="tinTuc-small">
-      <div class="thongtin1">
-        <a href="#" class="anh-tin-to">
-          <img src="a5.jpg" alt="anh tin to" /></a>
-
-        <a class="tieude tinto" href="#">
-          20% dân số thế giới mắc hội chứng lo âu khi học Toán, nếu nằm trong
-          số này bạn cần lưu tâm ngay những điều sau đây để cải thiện
-        </a>
-        <span class="time-update"><strong>Cập nhật</strong> - 5 ngày trước</span>
-        <p class="review-content">
-          Đã bao giờ bạn cảm thấy căng thẳng, toát mồ hôi hột, tim đập loạn xạ
-          bất chấp lúc bị thầy cô gọi lên bảng hay không thể tập ...
-        </p>
-      </div>
-      <!-- het thongtin1 -->
-      <div class="thongtin2">
-        <a href="#" class="anh-tin-nho"><img src="a7.jpg" alt="anh-tin-nho" /></a>
-        <a class="tieude tinto" href="#">Bị bắt giải bài Toán siêu khó khi đăng nhập vào trang web, dân mạng
-          đồng thanh: Thà làm robot còn hơn!</a>
-        <span class="time-update-tin-nho"><strong>Học đường</strong> - 17 ngày trước</span>
-      </div>
-      <!-- het tin 2 -->
-      <div class="thongtin2">
-        <a href="#" class="anh-tin-nho"><img src="a9.jpg" alt="anh-tin-nho" /></a>
-        <a class="tieude tinto" href="#">Có mẹ là nội trợ kiêm “cao thủ” toán học, anh chàng được giảng bài
-          3D bằng… miếng đậu phụ: Đỉnh vậy cũng nghĩ ra?</a>
-        <span class="time-update-tin-nho"><strong>Ăn-Quẩy-Đi</strong> - 1 tháng trước</span>
-      </div>
-      <!-- het tin 2 -->
-    </div>
-  </div>
-  <!-- het phan tren -->
-
-  <div class="phanGiua">
-    <h2>MÁY TÍNH CỦA TÔI</h2>
-    <div class="calculator-body">
-      <div class="main">
-        <div class="operation">
-          <p id="operation_content"></p>
+    </header>
+    <!-- end header content -->
+    <div class="tren">
+      <div class="slide">
+        <div class="dieu-huong">
+          <i class="fas fa-chevron-circle-left" onclick="back();"></i>
+          <i class="fas fa-chevron-circle-right" onclick="loadAnh();"></i>
         </div>
-        <div class="answer-calculator">
-          <input type="text" value="0" id="answer" readonly="" />
+        <div class="transform-slide">
+          <img alt="anh banner" src="images/a1.jpg"/>
+          <img alt="anh banner" src="images/a2.jpg"/>
+          <img alt="anh banner" src="images/a3.jpg"/>
+          <img alt="anh banner" src="images/a4.jpg"/>
         </div>
-        <div class="buttons">
-          <button class="btn" id="btn_pt" value="% " onclick="display(this)">
-            %
-          </button>
-          <button class="btn" id="btn_open" value="&#40;" onclick="display(this)">
-            &#40;
-          </button>
-          <button class="btn" id="btn_close" value="&#41;" onclick="display(this)">
-            &#41;
-          </button>
-          <button class="btn" id="btn_delete" onclick="del()">AC</button>
-          <button class="btn" id="btn_exp" value="e^(" onclick="display(this)">e^</button>
-          <button class="btn" id="btn_binhphuong" value="^2 " onclick="display(this)">
-            ^2
-          </button>
-          <button class="btn" id="btn_can" value="&#8730;&#40;" onclick="display(this)">
-            &#8730;
-          </button>
-          <button class="btn" id="btn_chia" value=" &#247; " onclick="display(this)">
-            &#247;
-          </button>
-          <button class="btn" id="btn_7" value="7" onclick="display(this)">
-            7
-          </button>
-          <button class="btn" id="btn_8" value="8" onclick="display(this)">
-            8
-          </button>
-          <button class="btn" id="btn_9" value="9" onclick="display(this)">
-            9
-          </button>
-          <button class="btn" id="btn_nhan" value=" x " onclick="display(this)">
-            x
-          </button>
-          <button class="btn" id="btn_4" value="4" onclick="display(this)">
-            4
-          </button>
-          <button class="btn" id="btn_5" value="5" onclick="display(this)">
-            5
-          </button>
-          <button class="btn" id="btn_6" value="6" onclick="display(this)">
-            6
-          </button>
-          <button class="btn" id="btn_tru" value=" - " onclick="display(this)">
-            -
-          </button>
-          <button class="btn" id="btn_1" value="1" onclick="display(this)">
-            1
-          </button>
-          <button class="btn" id="btn_2" value="2" onclick="display(this)">
-            2
-          </button>
-          <button class="btn" id="btn_3" value="3" onclick="display(this)">
-            3
-          </button>
-          <button class="btn" id="btn_cong" value=" + " onclick="display(this)">
-            +
-          </button>
-          <button class="btn" id="btn_log" value="log(" onclick="display(this)">log</button>
-          <button class="btn" id="btn_0" value="0" onclick="display(this)">
-            0
-          </button>
-          <button class="btn" id="btn_cham" value="." onclick="display(this)">
-            .
-          </button>
-          <button class="btn" id="btn_bang" onclick="calculate()">=</button>
+      </div>
+      <!-- ket thuc slideshows -->
+
+      <div class="tinTuc-small">
+        <div class="thongtin1">
+          <a class="anh-tin-to" href="#">
+            <img alt="anh tin to" src="a5.jpg"/></a>
+
+          <a class="tieude tinto" href="#">
+            20% dân số thế giới mắc hội chứng lo âu khi học Toán, nếu nằm trong
+                      số này bạn cần lưu tâm ngay những điều sau đây để cải thiện
+          </a>
+          <span class="time-update">
+            <strong>Cập nhật</strong>
+            - 5 ngày trước</span>
+          <p class="review-content">
+            Đã bao giờ bạn cảm thấy căng thẳng, toát mồ hôi hột, tim đập loạn xạ
+                      bất chấp lúc bị thầy cô gọi lên bảng hay không thể tập ...
+          </p>
         </div>
-        <div class="clear"></div>
+        <!-- het thongtin1 -->
+        <div class="thongtin2">
+          <a class="anh-tin-nho" href="#"><img alt="anh-tin-nho" src="a7.jpg"/></a>
+          <a class="tieude tinto" href="#">Bị bắt giải bài Toán siêu khó khi đăng nhập vào trang web, dân mạng
+                      đồng thanh: Thà làm robot còn hơn!</a>
+          <span class="time-update-tin-nho">
+            <strong>Học đường</strong>
+            - 17 ngày trước</span>
+        </div>
+        <!-- het tin 2 -->
+        <div class="thongtin2">
+          <a class="anh-tin-nho" href="#"><img alt="anh-tin-nho" src="a9.jpg"/></a>
+          <a class="tieude tinto" href="#">Có mẹ là nội trợ kiêm “cao thủ” toán học, anh chàng được giảng bài
+                      3D bằng… miếng đậu phụ: Đỉnh vậy cũng nghĩ ra?</a>
+          <span class="time-update-tin-nho">
+            <strong>Ăn-Quẩy-Đi</strong>
+            - 1 tháng trước</span>
+        </div>
+        <!-- het tin 2 -->
       </div>
     </div>
-  </div>
+    <!-- het phan tren -->
 
-  <script src="layout.js"> </script>
-  <script src="calculator.js"></script>
-</body>
+    <div class="phanGiua">
+      <h2>MÁY TÍNH CỦA TÔI</h2>
+      <div class="calculator-body">
+        <div class="main">
+          <div class="operation">
+            <p id="operation_content"></p>
+          </div>
+          <div class="answer-calculator">
+            <input id="answer" readonly="" type="text" value="0"/>
+          </div>
+          <div class="buttons">
+            <button class="btn" id="btn_pt" onclick="display(this)" value="% ">
+              %
+            </button>
+            <button class="btn" id="btn_open" onclick="display(this)" value="&#40;">
+              &#40;
+            </button>
+            <button class="btn" id="btn_close" onclick="display(this)" value="&#41;">
+              &#41;
+            </button>
+            <button class="btn" id="btn_delete" onclick="del()">AC</button>
+            <button class="btn" id="btn_exp" onclick="display(this)" value="e^(">
+              e^
+            </button>
+            <button class="btn" id="btn_binhphuong" onclick="display(this)" value="^2 ">
+              ^2
+            </button>
+            <button class="btn" id="btn_can" onclick="display(this)" value="&#8730;&#40;">
+              &#8730;
+            </button>
+            <button class="btn" id="btn_chia" onclick="display(this)" value=" &#247; ">
+              &#247;
+            </button>
+            <button class="btn" id="btn_7" onclick="display(this)" value="7">
+              7
+            </button>
+            <button class="btn" id="btn_8" onclick="display(this)" value="8">
+              8
+            </button>
+            <button class="btn" id="btn_9" onclick="display(this)" value="9">
+              9
+            </button>
+            <button class="btn" id="btn_nhan" onclick="display(this)" value=" x ">
+              x
+            </button>
+            <button class="btn" id="btn_4" onclick="display(this)" value="4">
+              4
+            </button>
+            <button class="btn" id="btn_5" onclick="display(this)" value="5">
+              5
+            </button>
+            <button class="btn" id="btn_6" onclick="display(this)" value="6">
+              6
+            </button>
+            <button class="btn" id="btn_tru" onclick="display(this)" value=" - ">
+              -
+            </button>
+            <button class="btn" id="btn_1" onclick="display(this)" value="1">
+              1
+            </button>
+            <button class="btn" id="btn_2" onclick="display(this)" value="2">
+              2
+            </button>
+            <button class="btn" id="btn_3" onclick="display(this)" value="3">
+              3
+            </button>
+            <button class="btn" id="btn_cong" onclick="display(this)" value=" + ">
+              +
+            </button>
+            <button class="btn" id="btn_log" onclick="display(this)" value="log(">
+              log
+            </button>
+            <button class="btn" id="btn_0" onclick="display(this)" value="0">
+              0
+            </button>
+            <button class="btn" id="btn_cham" onclick="display(this)" value=".">
+              .
+            </button>
+            <button class="btn" id="btn_bang" onclick="calculate()">=</button>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="layout.js"></script>
+    <script src="calculator.js"></script>
+  </body>
 
 </html>

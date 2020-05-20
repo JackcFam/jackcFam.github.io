@@ -1,8 +1,8 @@
-let kichThuoc = document.getElementsByClassName("slide")[0].clientWidth;
-let chuyen = 0;
-let chuyenSlide = document.getElementsByClassName("transform-slide")[0];
-let img = chuyenSlide.getElementsByTagName("img");
-let Max = kichThuoc * img.length;
+var kichThuoc = document.getElementsByClassName("slide")[0].clientWidth;
+var chuyen = 0;
+var chuyenSlide = document.getElementsByClassName("transform-slide")[0];
+var img = chuyenSlide.getElementsByTagName("img");
+var Max = kichThuoc * img.length;
 Max -= kichThuoc;
 function loadAnh() {
   if (chuyen < Max) {
