@@ -11,6 +11,31 @@
 
 }
 
+#btn_cong,
+#btn_tru,
+#btn_nhan,
+#btn_chia {
+  background-color: #2b85e26b;
+}
+
+#btn_delete {
+  background-color: #ffa500
+}
+
+#btn_open,
+#btn_close,
+#btn_exp,
+#btn_can,
+#btn_pt,
+#btn_binhphuong,
+#btn_log {
+  background-color: #ffc0c070;
+}
+
+#btn_cham {
+  background-color: #008074eb
+}
+
 .btn {
   display: block;
   float: left;
@@ -90,6 +115,7 @@ input#answer {
   justify-content: center;
   flex-flow: nowrap;
   align-items: center;
+  /* background-color: #00ff55e6; */
 }
 
 h2 {
