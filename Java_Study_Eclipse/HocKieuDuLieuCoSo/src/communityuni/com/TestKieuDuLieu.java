@@ -13,6 +13,9 @@ public class TestKieuDuLieu {
 		boolean b = true;
 		float f = 1.5f;
 		double a = 1.5;
+		System.out.println(a);
+		System.out.println(f);
+		System.out.println(b);
 		
 		
 	}
