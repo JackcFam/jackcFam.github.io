@@ -22,6 +22,7 @@ public class SwitchCase {
 		default:
 			System.exit(0);
 			break;
+		
 		}
 	}
 
