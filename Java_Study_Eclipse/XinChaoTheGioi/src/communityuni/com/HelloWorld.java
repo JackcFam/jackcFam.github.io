@@ -6,6 +6,7 @@ public class HelloWorld {
 		// TODO Auto-generated method stub
 		System.out.println("Xin chào các bạn");
 		System.out.println();
+		System.out.println("tôi là người đàn ông mạnh mẽ");
 	}
 
 }
