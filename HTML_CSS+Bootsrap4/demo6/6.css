@@ -1,0 +1,85 @@
+* {}
+
+.mottin {
+    width: 166px;
+    /* height: 200px; */
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 14px;
+}
+
+a.small-title1 {
+    text-decoration: none;
+    display: block;
+    font-family: tahoma;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: justify;
+    color: #398ebf;
+}
+
+.mottin img {
+    /* float: left; */
+    width: 166px;
+    /* height: 125px; */
+}
+
+.phai {
+    padding-left: 15px;
+    /* position: relative; */
+    /* left: 279px; */
+    /* display: flex; */
+    /* grid-gap: 10px; */
+    /* padding-left: 10px; */
+    width: 360px;
+    /* grid-template-columns: 1fr 1fr; */
+    /* height: 670px; */
+    float: left;
+}
+
+p {
+    display: block;
+    padding: 10px;
+    font-family: tahoma;
+    color: #004f8bbf;
+    font-size: 14px;
+}
+
+a.small-title {
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 18px;
+    display: block;
+    padding-left: 9px;
+    font-weight: bold;
+    color: #004f8b;
+    line-height: 20px;
+}
+
+.trai {
+    width: 340px;
+    height: 400px;
+    float: left;
+    background-color: #f6f6f6;
+    /* padding-right: 5px; */
+}
+
+.duoi {
+    padding-top: 10px;
+    /* width: 700px; */
+    /* height: 400px; */
+}
+
+a.big-title {
+    text-decoration: none;
+    font-family: tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    color: #12cac9f0;
+    background: url(6.png) no-repeat;
+    padding-left: 10px;
+}
+
+.tren {
+    width: 670px;
+}

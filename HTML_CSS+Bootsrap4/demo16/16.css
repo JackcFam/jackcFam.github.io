@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+p {
+    font-size: 16px;
+    width: 100%;
+    color: #00000096;
+    font-family: tahoma;
+    line-height: 22px;
+}
+
+a.title-duoi {display: inline-block;text-decoration: none;font-family: tahoma;font-size: 23px;color: black;padding-bottom: 23px;}
+
+.duoi {
+    width: 100%;
+    height: auto;
+}
+
+b.content-like {
+    display: inline-block;
+    padding-top: 12px;
+    font-size: 11px;
+    width: 70%;
+    padding-top: 4px;
+}
+
+.icon-like {
+    /* margin: 7px; */
+    padding: 1px 6px;
+    float: left;
+}
+
+.giua {
+    width: 100%;
+    position: relative;
+    height: 40px;
+    /* margin-bottom: 10px; */
+}
+
+.like b {
+    font-size: 10px;
+}
+
+.giua .people {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font: 700 13px/20px tahoma;
+    color: #000000e0;
+    transition: 0.4s;
+}
+
+.giua .people:hover {
+    color: red;
+}
+
+a.like {
+    color: white;
+    background-color: #3186e6ed;
+    display: block;
+    width: 90px;
+    height: 21px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-family: tahoma;
+    font-size: 14px;
+    /* padding-bottom: 10px; */
+}
+
+.giua img {
+    border-radius: 50%;
+    width: 29px;
+    margin: 7px 0 20px 0;
+    display: block;
+    float: left;
+}
+
+
+
+.layer2 {
+    position: absolute;
+    z-index: 4;
+    left: 8px;
+    bottom: -6px;
+    background-color: white;
+    width: 13px;
+    height: 13px;
+    transform:rotate(45deg);
+}
+.khungnoidung img {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    border: 0;
+}
+
+a.khungnoidung {
+    height: 205px;
+    display: block;
+    width: 100%;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-family: tahoma;
+    font-size: 11px;
+    overflow:hidden;
+}
+
+b.layer3 {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 92px;
+    display: block;
+    padding: 10px;
+    background-color: #2281a0fa;
+}
+
+article.to {
+    width: 365px;
+    margin: 10px;
+    height: auto;
+}

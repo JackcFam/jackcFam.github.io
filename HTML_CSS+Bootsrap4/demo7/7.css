@@ -1,0 +1,44 @@
+*{}
+
+.small-title {
+    text-decoration: none;
+    color: black;
+    font: 300 15px/20px tahoma;
+}
+
+img {
+    width: 100%;
+}
+
+.tamtin {
+    width: 140px;
+    height: 170px;
+    background-color: #ffffff;
+    float: left;
+    margin-right: 10px;
+}
+
+.duoi {
+    width: 440xp;
+    width: 450px;
+    height: auto;
+}
+
+a.big-title {
+    text-decoration: none;
+    font-family: tahoma;
+    font-weight: bold;
+    color: #000000d9;
+    font-size: 18px;
+}
+
+.tren a img {
+    width: 100%;
+}
+
+.tren {
+    width: 440px;
+    height: 440px;
+    /* float: left; */
+    background-color: #FFFFFF;
+}

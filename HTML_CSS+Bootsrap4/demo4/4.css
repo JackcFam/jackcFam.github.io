@@ -1,0 +1,36 @@
+.tieude {
+	font-family: 'Baloo Paaji 2', cursive;
+	border-bottom: 4px solid orange;
+}
+div.tieude h2 {
+	
+	background: white;
+	display:inline-block;
+	position: relative;
+	left: 35px;
+	top:41px;
+	padding-left: 10px;
+	padding-right: 20px;
+}
+.tin{
+	width: 190px;
+	height: 215px;
+	margin-right: 10px;
+	float: left;
+	margin-top: 23px;
+	
+}
+.tin img {
+	width: 190px;
+}
+
+.tin a {
+	text-decoration: none;
+	font-size: 13px;
+	font-family: 'Baloo Paaji 2', cursive;
+	font-weight: bold;
+	color: #333333;
+}
+.cucto {
+	width: 800px;
+}

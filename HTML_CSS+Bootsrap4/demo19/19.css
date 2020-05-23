@@ -1,0 +1,75 @@
+*{margin: 0;
+    padding: 0;}
+    .noidung{
+        margin:auto;
+        width: 1200px;
+    }
+
+.view {
+    display: inline-block;
+}
+
+.gia {
+    color: green;
+    /* float: right; */
+}
+
+.trai {
+    color: #000000a6;
+    width: 144px;
+    float: left;
+}
+
+.layer2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 194px;
+    height: 20px;
+    padding: 5px 15px;
+}
+
+.tacgia {
+    padding: 0 10px;
+    font-size: 12px;
+    color: #00000069;
+    font-family: tahoma;
+    font-weight: 700;
+}
+
+.name-sp {
+    font-family: tahoma;
+    font-size: 15px;
+    color: #000000c9;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 10px;
+    overflow: hidden;
+    height: 41px;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.layer1 img {
+    width: 100%;
+}
+
+.layer1 {
+    width: 100%;
+    height: auto;
+   
+}
+
+a.bo {
+    width: 215px;
+    height: 270px;
+    background-color: #ffffff;
+    position: relative;
+    box-shadow: 0px 2px 0 #80808036;
+    border: 1px solid #8080801c;
+    display: inline-block;
+    margin: 10px 5px 5px 10px;
+    text-decoration: none;
+}
