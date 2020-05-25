@@ -6,19 +6,28 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="wrap">
-      <h1>Demo DOM Event</h1>
-      x=<input type="text" id="x" /> <br />
-      y=<input type="text" id="y" /> <br />
-      <button onclick="sum()">SUM</button>
-      <p>x+y=<b id="result"></b></p>
-    </div>
     <script>
-      function sum() {
-        var x = document.getElementById("x").value;
-        var y = document.getElementById("y").value;
-        return (document.getElementById("result").innerText =
-          Number(x) + Number(y));
+      // kiểm tra chuỗi có số hay không và ko chứa khoảng trắng
+      function checkPassWord(str) {
+        let arr = str.split("");
+        let ketQua = false;
+        if (str.indexOf(" ") == -1) {
+          for (let i = 0; i < arr.length; i++) {
+            let test = parseInt(arr[i]);
+            if (Number.isNaN(test)) {
+              // Number.isInteger(test)
+              ketQua = true;
+            }
+          }
+        }
+        return ketQua;
+      }
+      function checkPassWord2(input) {
+        if (input.search(/\s/g) == -1 && input.search(/\d/g) !== -1) {
+          return true;
+        } else {
+          return false;
+        }
       }
     </script>
   </body>

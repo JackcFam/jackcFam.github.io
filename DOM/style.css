@@ -101,9 +101,11 @@ input#answer {
   border-top: 1px solid transparent;
   padding: 7px;
   background-color: #0000ff1c;
-  font-size: 20px;
+  font-size: 25px;
   font-family: tahoma;
   color: black;
+  text-align: right;
+  font-weight: 500;
 }
 
 .operation {

@@ -1,168 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="button">
-      <button onclick="changeColor()">Thay đổi màu chữ</button>&nbsp;&nbsp;
-      <button onclick="changeBgColor()">Thay đổi màu nền trang</button
-      >&nbsp;&nbsp;
-      <button onclick="copyContent()">Thay đổi(copy) nội dung</button
-      >&nbsp;&nbsp;
-      <button onclick="changeFontSize()">
-        Thay đổi font-size của tất cả các đoạn</button
-      >&nbsp;&nbsp;
-      <button onclick="increaseFontSize()">
-        Tăng font-size của đoạn tự chọn lên 1px</button
-      >&nbsp;&nbsp;
-      <button onclick="decreaseFontSize()">
-        Giảm font-size của đoạn tự chọn xuống 1px</button
-      >&nbsp;&nbsp;
+        <button onclick="changeColor()">Thay đổi màu chữ</button>&nbsp;&nbsp;
+        <button onclick="changeBgColor()">Thay đổi màu nền trang</button>&nbsp;&nbsp;
+        <button onclick="copyContent()">Thay đổi(copy) nội dung</button>&nbsp;&nbsp;
+        <button onclick="changeFontSize()">
+            Thay đổi font-size của tất cả các đoạn</button>&nbsp;&nbsp;
+        <button onclick="increaseFontSize()">
+            Tăng font-size của đoạn tự chọn lên 1px</button>&nbsp;&nbsp;
+        <button onclick="decreaseFontSize()">
+            Giảm font-size của đoạn tự chọn xuống 1px</button>&nbsp;&nbsp;
     </div>
     <h1>Lorem Ipsum</h1>
     <div class="chuNho">
-      <em class="chuNho1"
-        >"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-        consectetur, adipisci velit..."</em
-      >
-      <br />
-      <span class="chuNho1"
-        >"There is no one who loves pain itself, who seeks after it and wants to
-        have it, simply because it is pain..."</span
-      >
+        <em class="chuNho1">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+            consectetur, adipisci velit..."</em>
+        <br />
+        <span class="chuNho1">"There is no one who loves pain itself, who seeks after it and wants to
+            have it, simply because it is pain..."</span>
     </div>
     <div class="box-content">
-      <div class="box box1">
-        <h2>What is Lorem Ipsum?</h2>
-        <mark>id=p1</mark>
-        <p id="p1" class="content" style="font-size: 20px;">
-          <strong>Lorem Ipsum</strong> is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to make a type specimen book. Aldus PageMaker
-          including versions of Lorem Ipsum.
-        </p>
-      </div>
-
-      <div class="box box2">
-        <h2>Why do we use it?</h2>
-        <mark>id=p2</mark>
-        <p id="p2" class="content" style="font-size: 15px;">
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for 'lorem ipsum' will uncover many web sites still in their It
-          is a long established fact that a reader will be distracted by the.
-        </p>
-      </div>
-
-      <div class="box box3">
-        <h2>Where does it come from?</h2>
-        <mark>id=p3</mark>
-        <p id="p3" class="content" style="font-size: 25px;">
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It
-          has roots in a piece of classical Latin literature from 45 BC, making
-          it over 2000 years old. Richard McClintock, a Latin professor at
-          Hampden-Sydney College in Virginia, looked up one of the more obscure.
-        </p>
-      </div>
-      <div class="box box4">
-        <h2>Where can I get some?</h2>
-        <mark>id=p4</mark>
-        <p id="p4" class="content" style="font-size: 30px;">
-          This book is a treatise on the theory of ethics, very popular during
-          the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-          amet..", comes from a line in section 1.10.32.
-        </p>
-      </div>
+        <div class="box box1">
+            <h2>What is Lorem Ipsum?</h2>
+            <mark>id=p1</mark>
+            <p id="p1" class="content" style="font-size: 20px;">
+                <strong>Lorem Ipsum</strong> is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been the industry's standard
+                dummy text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. Aldus PageMaker
+                including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <div class="box box2">
+            <h2>Why do we use it?</h2>
+            <mark>id=p2</mark>
+            <p id="p2" class="content" style="font-size: 15px;">
+                look like readable English. Many desktop publishing packages and web
+                page editors now use Lorem Ipsum as their default model text, and a
+                search for 'lorem ipsum' will uncover many web sites still in their It
+                is a long established fact that a reader will be distracted by the.
+            </p>
+        </div>
+        <div class="box box3">
+            <h2>Where does it come from?</h2>
+            <mark>id=p3</mark>
+            <p id="p3" class="content" style="font-size: 25px;">
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                has roots in a piece of classical Latin literature from 45 BC, making
+                it over 2000 years old. Richard McClintock, a Latin professor at
+                Hampden-Sydney College in Virginia, looked up one of the more obscure.
+            </p>
+        </div>
+        <div class="box box4">
+            <h2>Where can I get some?</h2>
+            <mark>id=p4</mark>
+            <p id="p4" class="content" style="font-size: 30px;">
+                This book is a treatise on the theory of ethics, very popular during
+                the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+                amet..", comes from a line in section 1.10.32.
+            </p>
+        </div>
     </div>
-
     <script>
-      //Bài 1 Thay đổi màu chữ
-      function changeColor() {
+    //Bài 1 Thay đổi màu chữ
+    function changeColor() {
         let x = document.getElementsByClassName("content");
         for (let i = 0; i < x.length; i++) {
-          if (i === 0) {
-            x[i].style.color = "blue";
-          } else if (i === x.length - 1) {
-            x[i].style.color = "red";
-          } else {
-            x[i].style.color = "yellow";
-          }
+            if (i === 0) {
+                x[i].style.color = "blue";
+            } else if (i === x.length - 1) {
+                x[i].style.color = "red";
+            } else {
+                x[i].style.color = "yellow";
+            }
         }
-      }
+    }
 
-      //Bài 2 Thay đổi màu nền trang
-      function changeBgColor(color) {
+    //Bài 2 Thay đổi màu nền trang
+    function changeBgColor(color) {
         let x = document.getElementsByTagName("body");
         color = prompt("Mời bạn nhập màu trang muốn thay đổi", "pink");
         x[0].style.backgroundColor = color;
-      }
+    }
 
-      //Bài 3 Copy nội dung của đoạn văn
-      function copyContent(paragraph1, paragraph2) {
+    //Bài 3 Copy nội dung của đoạn văn
+    function copyContent(paragraph1, paragraph2) {
         paragraph1 = prompt("Mời bạn nhập id đoạn văn muốn thay đổi");
         paragraph2 = prompt("Mời bạn nhập id của đoạn văn muốn copy");
         let x = document.getElementById(paragraph1);
         let y = document.getElementById(paragraph2).innerHTML;
         if (paragraph1.length > 0 && paragraph2.length > 0) {
-          x.innerHTML = y;
+            x.innerHTML = y;
         } else {
-          alert("bạn đã nhập sai id mời bạn nhập lại");
+            alert("bạn đã nhập sai id mời bạn nhập lại");
         }
-      }
+    }
 
-      //Bài 4 thay đổi font-size của đoạn văn
-      function changeFontSize(x) {
+    //Bài 4 thay đổi font-size của đoạn văn
+    function changeFontSize(x) {
         x = prompt("Mời bạn nhập size của chữ");
         let arr = document.getElementsByClassName("content");
         for (let y of arr) {
-          y.style.fontSize = parseInt(x) + "px";
+            y.style.fontSize = parseInt(x) + "px";
         }
-      }
+    }
 
-      //Bài 5 function increaseFontSize(paragraph): Tăng kích thước font chữ của đoạn văn mong muốn
-      // (tham số truyền vào là id đoạn văn hoặc thứ tự đoạn văn) lên 1 pixel so với kích thước hiện tại,
-      // kích thước tăng lên không được vượt quá 30 pixels (Sử dụng sau khi gọi hàm changeFontSize()
-      // hoặc dùng window.getComputedStyle).
-      function increaseFontSize(paragraph) {
+    //Bài 5 function increaseFontSize(paragraph): Tăng kích thước font chữ của đoạn văn mong muốn
+    // (tham số truyền vào là id đoạn văn hoặc thứ tự đoạn văn) lên 1 pixel so với kích thước hiện tại,
+    // kích thước tăng lên không được vượt quá 30 pixels (Sử dụng sau khi gọi hàm changeFontSize()
+    // hoặc dùng window.getComputedStyle).
+    function increaseFontSize(paragraph) {
         paragraph = prompt("Mời bạn nhập đoạn văn muốn tăng kích thước");
         let x = document.getElementById(paragraph);
         let fontSizes = window
-          .getComputedStyle(x)
-          .getPropertyValue("font-size");
+            .getComputedStyle(x)
+            .getPropertyValue("font-size");
         x.style.fontSize = parseInt(fontSizes) + 1 + "px";
         let y = x.style.fontSize;
 
         if (parseInt(fontSizes) + 1 > 30) {
-          alert("font-size vượt quá 30px");
+            alert("font-size vượt quá 30px");
         } else {
-          return y;
+            return y;
         }
-      }
+    }
 
-      //Bài 6 function decreaseFontSize(paragraph):
-      // Giảm kích thước font chữ của đoạn văn mong muốn (tham số truyền vào là id đoạn văn hoặc thứ tự đoạn văn)
-      // xuống 1 pixels so với kích thước hiện tại, kích thước giảm xuống không vượt quá 10 pixels.
+    //Bài 6 function decreaseFontSize(paragraph):
+    // Giảm kích thước font chữ của đoạn văn mong muốn (tham số truyền vào là id đoạn văn hoặc thứ tự đoạn văn)
+    // xuống 1 pixels so với kích thước hiện tại, kích thước giảm xuống không vượt quá 10 pixels.
 
-      function decreaseFontSize(paragraph) {
+    function decreaseFontSize(paragraph) {
         paragraph = prompt("Mời bạn nhập đoạn văn muốn giảm kích thước");
         let x = document.getElementById(paragraph);
         let fontSizes = window
-          .getComputedStyle(x)
-          .getPropertyValue("font-size");
+            .getComputedStyle(x)
+            .getPropertyValue("font-size");
         x.style.fontSize = parseInt(fontSizes) - 1 + "px";
         let y = x.style.fontSize;
 
         if (parseInt(fontSizes) - 1 > 10) {
-          alert("font-size vượt quá 10px");
+            alert("font-size vượt quá 10px");
         } else {
-          return y;
+            return y;
         }
-      }
+    }
     </script>
-  </body>
+</body>
+
 </html>
