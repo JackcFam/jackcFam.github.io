@@ -44,7 +44,7 @@ function calculate() {
         tmp = tmp.replace(/log\(/g, "Math.log10(");
         tmp = tinhBinhPhuong(tmp);
         tmp = tinhExp(tmp);
-        if (tmp.indexOf("NaN") != -1) {
+        if (tmp.indexOf("NaN") !== -1) {
             alert("Biểu thức bạn nhập không hợp lệ!");
         } else {
             var result = eval(tmp);
