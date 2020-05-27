@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+p#operation_content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.theme-btn button {
+  font-size: 30px;
+  color: yellow;
+  background-color: #d07711;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 1s;
+}
+
+.theme-btn button:hover {
+  opacity: 1;
+}
+
+.theme-btn {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  top: 10px;
+  left: 10px;
+
+}
+
+.btn {
+  width: 98px;
+  height: 52px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: tahoma;
+  color: #333333;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #0027ff14;
+  box-shadow: 1px 2px 3px gray;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+#btn_phantram,
+#btn_giaithua,
+#btn_binhphuong,
+#btn_can,
+#btn_log {
+  background-color: #0079ffbf;
+  color: #fffffffa;
+}
+
+#btn_cong,
+#btn_tru,
+#btn_nhan,
+#btn_chia {
+  background-color: #ff149370;
+}
+
+#btn_bang {
+  background-color: #ff0000d9;
+  color: white
+}
+
+#btn_cham {
+  background-color: #ffff00c4;
+}
+
+#btn_del,
+#btn_ac {
+  background-color: #b6d61a
+}
+
+#backspace {
+  background-color: #ff57002b
+}
+
+button#backspace i {
+  font-size: 20px;
+}
+
+.group-button {
+  display: grid;
+  grid-gap: 5px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 82%;
+  margin-top: 17px;
+}
+
+.answer-operation {
+  width: 100%;
+  overflow: hidden;
+}
+
+input#answer {
+  width: 395px;
+  border: 1px solid gray;
+  height: 30px;
+  border-top: 1px solid transparent;
+  padding: 7px;
+  background-color: #0000ff1c;
+  font-size: 25px;
+  font-family: tahoma;
+  color: black;
+  text-align: right;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+.operation {
+  width: 395px;
+  height: 30px;
+  text-align: right;
+  padding: 7px;
+  border: 1px solid gray;
+  border-bottom: 1px solid transparent;
+  background-color: #0000ff1c;
+  font-size: 25px;
+  font-family: tahoma;
+  color: black;
+  overflow: hidden;
+}
+
+.main {
+  border: 1px solid gray;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.body-calculator {
+  max-width: 410px;
+  height: 540px;
+  border: 2px solid darkgray;
+  box-shadow: 4px 4px 4px #8fbc8f8c;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+body {
+  background: url(background.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
