@@ -1,5 +1,4 @@
-﻿var x = document.getElementsByTagName("h4");
-x[0].innerHTML = "hello";
-
-var y = document.querySelectorAll(".card .card-body");
-console.log(y.length);
+﻿var str = "ss fsdfsdvdgffs gsfds fsf%fsfđs fsdfsd sfdv";
+var index = str.indexOf("%");
+var value = str.slice(index + 1, str.length);
+console.log(value);
