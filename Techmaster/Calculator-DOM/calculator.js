@@ -3,26 +3,26 @@ var content_operation = document.getElementById("operation_content");
 
 function display(button) {
   var flag = true;
-  if (content_operation.innerHTML != "<br>") {
+  if (content_operation.innerHTML !== "<br>") {
     if (
-      button.value != " + " &&
-      button.value != " - " &&
-      button.value != " x " &&
-      button.value != " ÷ " &&
-      button.value != "^2 " &&
-      button.value != "1/x " &&
-      button.value != "% "
+      button.value !== " + " &&
+      button.value !== " - " &&
+      button.value !== " x " &&
+      button.value !== " ÷ " &&
+      button.value !== "^2 " &&
+      button.value !== "1/x " &&
+      button.value !== "% "
     ) {
       del();
     }
   }
-  if (button.value == ")") {
-    if (count(operation.value, "(") == count(operation.value, ")")) {
+  if (button.value === ")") {
+    if (count(operation.value, "(") === count(operation.value, ")")) {
       alert("Bạn chưa có mở ngoặc tương ứng!");
       flag = false;
     }
   }
-  if (flag == true) operation.value += button.value;
+  if (flag === true) operation.value += button.value;
 }
 
 function del() {
@@ -64,17 +64,17 @@ function tinhBinhPhuong(str) {
   do {
     var num = "";
     var pos = str.indexOf("^2", begin);
-    if (pos != -1) {
+    if (pos !== -1) {
       begin = pos + 1;
       var i = pos - 1;
       for (; i >= 0; i--) {
-        if (str[i] == " " || i == 0) break;
+        if (str[i] === " " || i === 0) break;
       }
       num = str.slice(i, pos);
       var binhphuong = Math.pow(Number(num), 2);
       str = str.replace(num + "^2", binhphuong);
     }
-  } while (pos != -1);
+  } while (pos !== -1);
   return str;
 }
 
@@ -83,17 +83,17 @@ function tinhExp(str) {
   do {
     var num = "";
     var pos = str.indexOf("e^(", begin);
-    if (pos != -1) {
+    if (pos !== -1) {
       begin = pos + 1;
       var i = pos + 3;
       for (; i <= str.length; i++) {
-        if (str[i] == ")") break;
+        if (str[i] === ")") break;
       }
       num = str.slice(pos + 3, i);
       var exp = Math.exp(Number(num));
       str = str.replace("e^(" + num + ")", exp);
     }
-  } while (pos != -1);
+  } while (pos !== -1);
   return str;
 }
 
@@ -103,10 +103,10 @@ function count(str, symbol) {
     i = 0;
   do {
     pos = str.indexOf(symbol, i);
-    if (pos != -1) {
+    if (pos !== -1) {
       count++;
       i = pos + 1;
     }
-  } while (pos != -1);
+  } while (pos !== -1);
   return count;
 }
