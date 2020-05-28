@@ -32,11 +32,11 @@ function del() {
 
 function calculate() {
   try {
-    var diff = count(operation.value, "(") - count(operation.value, ")");
-    for (var i = 0; i < diff; i++) {
+    let diff = count(operation.value, "(") - count(operation.value, ")");
+    for (let i = 0; i < diff; i++) {
       operation.value += ")";
     }
-    var tmp = operation.value;
+    let tmp = operation.value;
     tmp = tmp.replace(/ x /g, " * ");
     tmp = tmp.replace(/ ÷ /g, " / ");
     tmp = tmp.replace(/ % /g, "/100");
@@ -47,7 +47,7 @@ function calculate() {
     if (tmp.indexOf("NaN") !== -1) {
       alert("Biểu thức bạn nhập không hợp lệ!");
     } else {
-      var result = eval(tmp);
+      let result = eval(tmp);
       content_operation.innerText = operation.value + " = ";
       operation.value = result;
     }
@@ -62,8 +62,8 @@ function calculate() {
 function tinhBinhPhuong(str) {
   var begin = 0;
   do {
-    var num = "";
-    var pos = str.indexOf("^2", begin);
+    let num = "";
+    let pos = str.indexOf("^2", begin);
     if (pos !== -1) {
       begin = pos + 1;
       var i = pos - 1;
@@ -71,7 +71,7 @@ function tinhBinhPhuong(str) {
         if (str[i] === " " || i === 0) break;
       }
       num = str.slice(i, pos);
-      var binhphuong = Math.pow(Number(num), 2);
+      let binhphuong = Math.pow(Number(num), 2);
       str = str.replace(num + "^2", binhphuong);
     }
   } while (pos !== -1);
@@ -79,18 +79,18 @@ function tinhBinhPhuong(str) {
 }
 
 function tinhExp(str) {
-  var begin = 0;
+  let begin = 0;
   do {
-    var num = "";
-    var pos = str.indexOf("e^(", begin);
+    let num = "";
+    let pos = str.indexOf("e^(", begin);
     if (pos !== -1) {
       begin = pos + 1;
-      var i = pos + 3;
+      let i = pos + 3;
       for (; i <= str.length; i++) {
         if (str[i] === ")") break;
       }
       num = str.slice(pos + 3, i);
-      var exp = Math.exp(Number(num));
+      let exp = Math.exp(Number(num));
       str = str.replace("e^(" + num + ")", exp);
     }
   } while (pos !== -1);
@@ -110,3 +110,4 @@ function count(str, symbol) {
   } while (pos !== -1);
   return count;
 }
+
