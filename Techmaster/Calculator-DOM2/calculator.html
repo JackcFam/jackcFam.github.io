@@ -39,24 +39,19 @@
           <button
             class="btn"
             id="btn_binhphuong"
-            onclick="display(this)"
+            onclick="binhphuong()"
             value=" ^2"
           >
             x<sup>2</sup>
           </button>
-          <button
-            class="btn"
-            id="btn_can"
-            onclick="display(this)"
-            value="&#8730;"
-          >
+          <button class="btn" id="btn_can" onclick="can()" value="&#8730;">
             &#8730;
           </button>
           <button
-            class="btn"
+            class="btn operation-button"
             id="btn_chia"
             onclick="display(this)"
-            value=" &#247; "
+            value="÷"
           >
             &#247;
           </button>
@@ -69,7 +64,12 @@
           <button class="btn" id="btn_9" onclick="display(this)" value="9">
             9
           </button>
-          <button class="btn" id="btn_nhan" onclick="display(this)" value=" x ">
+          <button
+            class="btn operation-button"
+            id="btn_nhan"
+            onclick="display(this)"
+            value="x"
+          >
             &#215;
           </button>
           <button class="btn" id="btn_4" onclick="display(this)" value="4">
@@ -81,7 +81,12 @@
           <button class="btn" id="btn_6" onclick="display(this)" value="6">
             6
           </button>
-          <button class="btn" id="btn_tru" onclick="display(this)" value=" - ">
+          <button
+            class="btn operation-button"
+            id="btn_tru"
+            onclick="display(this)"
+            value="-"
+          >
             &#8722;
           </button>
           <button class="btn" id="btn_1" onclick="display(this)" value="1">
@@ -93,10 +98,15 @@
           <button class="btn" id="btn_3" onclick="display(this)" value="3">
             3
           </button>
-          <button class="btn" id="btn_cong" onclick="display(this)" value=" + ">
+          <button
+            class="btn"
+            id="btn_cong operation-button"
+            onclick="display(this)"
+            value="+"
+          >
             &#43;
           </button>
-          <button class="btn" id="btn_log" onclick="display(this)" value="log(">
+          <button class="btn" id="btn_log" onclick="log()" value="log(">
             log
           </button>
           <button class="btn" id="btn_0" onclick="display(this)" value="0">
@@ -115,7 +125,6 @@
     <div class="theme-btn">
       <button><i class="fas fa-certificate"></i></button>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="calculator.js"></script>
   </body>
 </html>
