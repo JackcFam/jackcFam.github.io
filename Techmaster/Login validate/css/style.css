@@ -1,51 +1,61 @@
 * {
-  box-sizing: border-box;
-  font-family: tahoma;
+    box-sizing: border-box;
+    font-family: tahoma;
 }
+
 body {
-  background: linear-gradient(45deg, #03a9f4, red);
+    background: linear-gradient(45deg, #03a9f4, red);
 }
+
 form {
-  margin: auto;
-  width: 490px;
-  padding: 20px 15px;
-  background: linear-gradient(45deg, #9e9e9e, transparent);
-  border-radius: 20px;
-  color: white;
-  display: grid;
-  grid-template-columns: 49% 49%;
-  grid-gap: 0 2%;
+    margin: auto;
+    width: 490px;
+    padding: 20px 15px;
+    background: linear-gradient(45deg, #9e9e9e, transparent);
+    border-radius: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-gap: 0 2%;
 }
+
 h1 {
-  text-align: center;
-  margin: 50px 0 20px 0;
-  color: aliceblue;
-  text-transform: capitalize;
+    text-align: center;
+    margin: 50px 0 20px 0;
+    color: aliceblue;
+    text-transform: capitalize;
 }
+
 input {
-  padding: 15px;
-  margin: 0 0 20px 0;
-  border: none;
-  background: white;
-  color: black;
-  border-radius: 5px;
+    padding: 15px;
+    margin: 0 0 20px 0;
+    border: none;
+    background: white;
+    color: black;
+    border-radius: 5px;
 }
+
 input::placeholder {
-  color: black;
+    color: black;
 }
+
 input::-ms-input-placeholder {
-  color: black;
+    color: black;
 }
+
 .field input:focus {
-  box-shadow: inset 0 0 0px 3px rgba(228, 239, 192, 1);
+    box-shadow: inset 0 0 0px 3px rgba(228, 239, 192, 1);
 }
+
 label {
-  font-weight: bold;
+    font-weight: bold;
 }
+
 .field.gender {
-  align-self: center;
-  justify-self: center;
+    align-self: center;
+    justify-self: center;
 }
+
 #first_name,
 #last_name,
 #address,
@@ -53,97 +63,110 @@ label {
 #phone,
 #password,
 #facebook {
-  width: 100%;
+    width: 100%;
 }
+
 #female,
 #birthday {
-  margin-left: 10px;
+    margin-left: 10px;
 }
+
 .double {
-  display: grid;
-  grid-template-columns: 59% 39%;
-  grid-gap: 2%;
+    display: grid;
+    grid-template-columns: 59% 39%;
+    grid-gap: 2%;
 }
+
 .field.address,
 .field.email,
 .field.phone,
 .field.password,
 .double,
 .field.facebook {
-  grid-column: span 2;
+    grid-column: span 2;
 }
+
 #submit {
-  border: solid 3px rgba(228, 239, 192, 1);
-  display: block;
-  margin: auto;
-  width: 100px;
-  cursor: pointer;
-  grid-column: span 2;
-  background: linear-gradient(45deg, #00fff3, transparent);
-  color: white;
-  box-shadow: 1px 4px 4px lightblue;
-  font-size: 17px;
-  opacity: 0.7;
+    border: solid 3px rgba(228, 239, 192, 1);
+    display: block;
+    margin: auto;
+    width: 100px;
+    cursor: pointer;
+    grid-column: span 2;
+    background: linear-gradient(45deg, #00fff3, transparent);
+    color: white;
+    box-shadow: 1px 4px 4px lightblue;
+    font-size: 17px;
+    opacity: 0.7;
 }
+
 #submit:hover {
-  opacity: 1.5;
+    opacity: 1.5;
 }
 
 .field {
-  position: relative;
+    position: relative;
 }
+
 .error {
-  position: absolute;
-  background: white;
-  border: solid 2px rgba(247, 178, 59, 1);
-  border-radius: 10px;
-  width: 100%;
-  top: 80%;
-  z-index: 5;
-  color: rgba(247, 178, 59, 1);
-  padding: 8px;
-  font-size: 14px;
-  display: none;
+    position: absolute;
+    background: red;
+    border: solid 2px red;
+    border-radius: 10px;
+    width: 100%;
+    top: 80%;
+    z-index: 5;
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    display: none;
 }
+
 .error:after {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: 15px;
-  width: 0;
-  height: 0;
-  border: 8px solid transparent;
-  border-bottom-color: rgba(247, 178, 59, 1);
-  border-top: 0;
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: red;
+    border-top: 0;
 }
+
 .error.gender {
-  left: 130%;
-  top: -10px;
-  z-index: 3;
+    left: 130%;
+    top: -10px;
+    z-index: 3;
 }
+
 .error.gender:after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: -8px;
-  width: 0;
-  height: 0;
-  border: 8px solid transparent;
-  border-right-color: rgba(249, 196, 101, 1);
-  border-left: 0;
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -8px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-right-color: rgba(249, 196, 101, 1);
+    border-left: 0;
 }
+
 .invalid {
-  background: rgba(228, 239, 192, 1);
-  animation: blink 0.5s linear;
-}
-@keyframes blink {
-  0% {
     background: rgba(228, 239, 192, 1);
-  }
-  50% {
-    background: white;
-  }
-  100% {
-    bbackground: rgba(228, 239, 192, 1);
-  }
+    animation: blink 0.5s linear;
+}
+
+@keyframes blink {
+    0% {
+        background: rgba(228, 239, 192, 1);
+    }
+
+    50% {
+        background: white;
+    }
+
+    100% {
+        bbackground: rgba(228, 239, 192, 1);
+    }
 }
