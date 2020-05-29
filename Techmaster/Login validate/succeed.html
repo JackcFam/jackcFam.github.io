@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>registration form</title>
     <link rel="stylesheet" type="text/css" href="css/succeed.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <div>
-      <h2>Sign Up Success</h2>
-      <p id="name"><b>Your Name:</b></p>
-      <p id="birth"><b>Birthday:</b></p>
-      <p id="gender"><b>Gender:</b></p>
-      <p id="address"><b>Address:</b></p>
-      <p id="email"><b>Email:</b></p>
-      <p id="phone"><b>Phone:</b></p>
-      <p id="facebook"><b>Facebook:</b></p>
-      <p><b>Password:</b><input type="password" id="password" disabled /></p>
+        <h2>Sign Up Success</h2>
+        <p id="name"><b>Your Name:</b></p>
+        <p id="birth"><b>Birthday:</b></p>
+        <p id="gender"><b>Gender:</b></p>
+        <p id="address"><b>Address:</b></p>
+        <p id="email"><b>Email:</b></p>
+        <p id="phone"><b>Phone:</b></p>
+        <p id="facebook"><b>Facebook:</b></p>
+        <p><b>Password:</b><input type="password" id="password" disabled /></p>
     </div>
     <script>
-      window.addEventListener("load", function () {
+    window.addEventListener("load", function() {
         function find(value) {
-          if (document.URL.search(value) >= 0) {
-            var find = document.URL.slice(document.URL.search(value));
-            find = find.slice(find.search("=") + 1);
-            if (find.search("&") >= 0) {
-              find = find.substring(0, find.search("&"));
+            if (document.URL.search(value) >= 0) {
+                var find = document.URL.slice(document.URL.search(value));
+                find = find.slice(find.search("=") + 1);
+                if (find.search("&") >= 0) {
+                    find = find.substring(0, find.search("&"));
+                }
+                return decodeURIComponent(find).replace(/\+/g, " ");
+            } else {
+                return "";
             }
-            return decodeURIComponent(find).replace(/\+/g, " ");
-          } else {
-            return "";
-          }
         }
         var name = find("first_name") + " " + find("last_name");
         var birth = find("birthday");
@@ -48,7 +49,8 @@
         document.getElementById("password").value += password;
         document.getElementById("birth").innerHTML += " " + birth;
         document.getElementById("facebook").innerHTML += " " + facebook;
-      });
+    });
     </script>
-  </body>
+</body>
+
 </html>
