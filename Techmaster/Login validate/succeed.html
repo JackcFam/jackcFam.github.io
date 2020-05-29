@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>registration form</title>
+    <link rel="stylesheet" type="text/css" href="css/succeed.css" />
+  </head>
+
+  <body>
+    <div>
+      <h2>Sign Up Success</h2>
+      <p id="name"><b>Your Name:</b></p>
+      <p id="birth"><b>Birthday:</b></p>
+      <p id="gender"><b>Gender:</b></p>
+      <p id="address"><b>Address:</b></p>
+      <p id="email"><b>Email:</b></p>
+      <p id="phone"><b>Phone:</b></p>
+      <p id="facebook"><b>Facebook:</b></p>
+      <p><b>Password:</b><input type="password" id="password" disabled /></p>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        function find(value) {
+          if (document.URL.search(value) >= 0) {
+            var find = document.URL.slice(document.URL.search(value));
+            find = find.slice(find.search("=") + 1);
+            if (find.search("&") >= 0) {
+              find = find.substring(0, find.search("&"));
+            }
+            return decodeURIComponent(find).replace(/\+/g, " ");
+          } else {
+            return "";
+          }
+        }
+        var name = find("first_name") + " " + find("last_name");
+        var birth = find("birthday");
+        var gender = find("gender");
+        var address = find("address");
+        var email = find("email");
+        var phone = find("phone");
+        var password = find("password");
+        var facebook = find("facebook");
+        document.getElementById("name").innerHTML += " " + name;
+        document.getElementById("gender").innerHTML += " " + gender;
+        document.getElementById("address").innerHTML += " " + address;
+        document.getElementById("email").innerHTML += " " + email;
+        document.getElementById("phone").innerHTML += " " + phone;
+        document.getElementById("password").value += password;
+        document.getElementById("birth").innerHTML += " " + birth;
+        document.getElementById("facebook").innerHTML += " " + facebook;
+      });
+    </script>
+  </body>
+</html>
