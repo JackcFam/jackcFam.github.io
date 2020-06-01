@@ -204,7 +204,8 @@ section.content {
 a.link-items {
     text-decoration: none;
     line-height: 24px;
-    display: block
+    display: block;
+    color: #333333;
 }
 
 a.link-items:hover {
