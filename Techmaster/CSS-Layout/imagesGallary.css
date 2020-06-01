@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.title {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 1px 4px 4px pink;
+}
+
+h1.title.dog {
+    background: cadetblue;
+    color: white;
+}
+
+h1.title.cat {
+    background-color: yellowgreen;
+    color: white;
+}
+
+h1.title.phongcanh {
+    background-color: #008000eb;
+    color: white;
+}
+
+h1.title.chandung {
+    background-color: #FF8273;
+    color: yellow;
+}
+
+.container {
+    margin: 10px 0;
+}
+
+.list-menu a {
+    text-decoration: none;
+    display: block;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    width: 120px;
+    font-family: tahoma;
+    text-align: center;
+}
+
+.list-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: pink;
+    width: 100%;
+    padding-top: 10px;
+    border-radius: 4px;
+}
+
+.main-menu {
+    width: 100%;
+}
+
+h1.banner-title {
+    font-family: tahoma;
+    color: pink;
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid lightpink;
+}
+
+.banner {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+body {
+    margin: auto;
+    width: 1000px;
+    background-color: #ffffff;
+}
+
+
+@media(max-width: 900px) and (min-width:500px) {
+    .box {
+        gird-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 499px) {
+    body {
+        max-width: 499px;
+    }
+
+    .box {
+        gird-template-columns: 1fr;
+    }
+}

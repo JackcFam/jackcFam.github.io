@@ -6,7 +6,6 @@
 .box {
     width: 36px;
     height: 34px;
-    border: 1px solid transparent;
     text-align: center;
     padding-top: 10px;
     padding-left: 5px;
@@ -203,17 +202,17 @@ li.menu-item-sub a:hover {
     color: #ffffff;
 }
 
-.dropdown-menu-item-sup > .dropdown-menu-item-sub {
+.dropdown-menu-item-sup>.dropdown-menu-item-sub {
     display: none;
     /* position: absolute;*/
 }
 
-.dropdown-menu-item-sup:hover > .dropdown-menu-item-sub {
+.dropdown-menu-item-sup:hover>.dropdown-menu-item-sub {
     display: block;
 
 }
 
-.dropdown-menu-item-sup > a {
+.dropdown-menu-item-sup>a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 700;
@@ -222,7 +221,7 @@ li.menu-item-sub a:hover {
     font-size: 14px;
 }
 
-.dropdown-menu-item-sup > a:hover {
+.dropdown-menu-item-sup>a:hover {
     display: inline-block;
     border-bottom: 1px solid #ffffff;
 }

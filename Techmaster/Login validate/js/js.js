@@ -138,7 +138,6 @@
               emailValid = true;
           }
       }
-
   }
 
   function genderVerify() {
