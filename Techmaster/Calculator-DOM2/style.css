@@ -28,7 +28,6 @@ p#operation_content {
   height: 105px;
   top: 10px;
   left: 10px;
-
 }
 
 .btn {
@@ -66,7 +65,7 @@ p#operation_content {
 
 #btn_bang {
   background-color: #ff0000d9;
-  color: white
+  color: white;
 }
 
 #btn_cham {
@@ -75,11 +74,11 @@ p#operation_content {
 
 #btn_del,
 #btn_ac {
-  background-color: #b6d61a
+  background-color: #b6d61a;
 }
 
 #backspace {
-  background-color: #ff57002b
+  background-color: #ff57002b;
 }
 
 button#backspace i {

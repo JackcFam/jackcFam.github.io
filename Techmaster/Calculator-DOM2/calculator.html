@@ -1,130 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fonts/css/all.css" />
-  </head>
 
-  <body>
-    <div class="body-calculator">
-      <div class="main">
-        <div class="operation">
-          <p id="operation_content"></p>
-          <br />
-        </div>
-        <div class="answer-operation">
-          <input type="text" id="answer" value="" />
-        </div>
-        <div class="group-button">
-          <button
-            class="btn"
-            id="btn_phantram"
-            value="%"
-            onclick="display(this)"
-            value="%"
-          >
-            %
-          </button>
-          <button class="btn" id="btn_del" onclick="del()">Del</button>
-          <button class="btn" id="btn_ac" onclick="ac()">AC</button>
-          <button class="btn" id="backspace" onclick="backspace()">
-            <i class="fas fa-backspace"></i>
-          </button>
-          <button class="btn" id="btn_giaithua" onclick="giaithua()" value="!">
-            x!
-          </button>
-          <button
-            class="btn"
-            id="btn_binhphuong"
-            onclick="binhphuong()"
-            value=" ^2"
-          >
-            x<sup>2</sup>
-          </button>
-          <button class="btn" id="btn_can" onclick="can()" value="&#8730;">
-            &#8730;
-          </button>
-          <button
-            class="btn operation-button"
-            id="btn_chia"
-            onclick="display(this)"
-            value="÷"
-          >
-            &#247;
-          </button>
-          <button class="btn" id="btn_7" onclick="display(this)" value="7">
-            7
-          </button>
-          <button class="btn" id="btn_8" onclick="display(this)" value="8">
-            8
-          </button>
-          <button class="btn" id="btn_9" onclick="display(this)" value="9">
-            9
-          </button>
-          <button
-            class="btn operation-button"
-            id="btn_nhan"
-            onclick="display(this)"
-            value="x"
-          >
-            &#215;
-          </button>
-          <button class="btn" id="btn_4" onclick="display(this)" value="4">
-            4
-          </button>
-          <button class="btn" id="btn_5" onclick="display(this)" value="5">
-            5
-          </button>
-          <button class="btn" id="btn_6" onclick="display(this)" value="6">
-            6
-          </button>
-          <button
-            class="btn operation-button"
-            id="btn_tru"
-            onclick="display(this)"
-            value="-"
-          >
-            &#8722;
-          </button>
-          <button class="btn" id="btn_1" onclick="display(this)" value="1">
-            1
-          </button>
-          <button class="btn" id="btn_2" onclick="display(this)" value="2">
-            2
-          </button>
-          <button class="btn" id="btn_3" onclick="display(this)" value="3">
-            3
-          </button>
-          <button
-            class="btn"
-            id="btn_cong operation-button"
-            onclick="display(this)"
-            value="+"
-          >
-            &#43;
-          </button>
-          <button class="btn" id="btn_log" onclick="log()" value="log(">
-            log
-          </button>
-          <button class="btn" id="btn_0" onclick="display(this)" value="0">
-            0
-          </button>
-          <button class="btn" id="btn_cham" onclick="display(this)" value=".">
-            &#8729;
-          </button>
-          <button class="btn" id="btn_bang" onclick="ketqua()" value="=">
-            &#61;
-          </button>
-        </div>
-        <div class="clear"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fonts/css/all.css" />
+</head>
+
+<body>
+  <div class="body-calculator">
+    <div class="main">
+      <div class="operation">
+        <p id="operation_content"></p>
+        <br />
       </div>
+      <div class="answer-operation">
+        <input type="text" id="answer" value="" />
+      </div>
+      <div class="group-button">
+        <button class="btn" id="btn_phantram" value="%" onclick="display(this)" value="%">
+          %
+        </button>
+        <button class="btn" id="btn_del" onclick="del()">Del</button>
+        <button class="btn" id="btn_ac" onclick="ac()">AC</button>
+        <button class="btn" id="backspace" onclick="backspace()">
+          <i class="fas fa-backspace"></i>
+        </button>
+        <button class="btn" id="btn_giaithua" onclick="giaithua()" value="!">
+          x!
+        </button>
+        <button class="btn" id="btn_binhphuong" onclick="binhphuong()" value=" ^2">
+          x<sup>2</sup>
+        </button>
+        <button class="btn" id="btn_can" onclick="can()" value="&#8730;">
+          &#8730;
+        </button>
+        <button class="btn operation-button" id="btn_chia" onclick="display(this)" value="÷">
+          &#247;
+        </button>
+        <button class="btn" id="btn_7" onclick="display(this)" value="7">
+          7
+        </button>
+        <button class="btn" id="btn_8" onclick="display(this)" value="8">
+          8
+        </button>
+        <button class="btn" id="btn_9" onclick="display(this)" value="9">
+          9
+        </button>
+        <button class="btn operation-button" id="btn_nhan" onclick="display(this)" value="x">
+          &#215;
+        </button>
+        <button class="btn" id="btn_4" onclick="display(this)" value="4">
+          4
+        </button>
+        <button class="btn" id="btn_5" onclick="display(this)" value="5">
+          5
+        </button>
+        <button class="btn" id="btn_6" onclick="display(this)" value="6">
+          6
+        </button>
+        <button class="btn operation-button" id="btn_tru" onclick="display(this)" value="-">
+          &#8722;
+        </button>
+        <button class="btn" id="btn_1" onclick="display(this)" value="1">
+          1
+        </button>
+        <button class="btn" id="btn_2" onclick="display(this)" value="2">
+          2
+        </button>
+        <button class="btn" id="btn_3" onclick="display(this)" value="3">
+          3
+        </button>
+        <button class="btn" id="btn_cong operation-button" onclick="display(this)" value="+">
+          &#43;
+        </button>
+        <button class="btn" id="btn_log" onclick="log()" value="log(">
+          log
+        </button>
+        <button class="btn" id="btn_0" onclick="display(this)" value="0">
+          0
+        </button>
+        <button class="btn" id="btn_cham" onclick="display(this)" value=".">
+          &#8729;
+        </button>
+        <button class="btn" id="btn_bang" onclick="ketqua()" value="=">
+          &#61;
+        </button>
+      </div>
+      <div class="clear"></div>
     </div>
-    <div class="theme-btn">
-      <button><i class="fas fa-certificate"></i></button>
-    </div>
-    <script src="calculator.js"></script>
-  </body>
+  </div>
+  <div class="theme-btn">
+    <button><i class="fas fa-certificate"></i></button>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+
 </html>
