@@ -13,3 +13,4 @@
      //nhung khi den so 0 thi quay tro ve 5
      console.log("gia tri cua b la:" + (b % 5 + 1));
  }
+ chaythu();
