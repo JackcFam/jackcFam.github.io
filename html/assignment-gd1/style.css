@@ -27,6 +27,7 @@ input#email-subscribe {
   height: 40px;
   background-color: #f3f3f3;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .bottom-newsletter form label {
