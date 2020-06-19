@@ -4,6 +4,111 @@
   box-sizing: border-box;
 }
 
+.third-main {
+  border: 1px solid #ffffff;
+  box-shadow: 0 1px 1px 1px lightgray;
+  padding: 35px 20px;
+}
+
+a.left-second-main {
+  display: block;
+  box-shadow: 0 1px 1px 1px lightgray;
+}
+
+.second-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.price-item-bottom-first-main {
+  font-size: 15px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.name-item-bottom-first-main {
+  padding-left: 20px;
+}
+
+.item-bottom-first-main img {
+  margin-bottom: 20px;
+  line-height: 0;
+}
+
+.item-bottom-first-main {
+  text-align: center;
+}
+
+.bottom-first-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 30px;
+}
+
+a.menu-sub-right-top-first-main {
+  text-decoration: none;
+  color: #616161;
+  display: block;
+  text-align: justify;
+}
+
+.menu-fast-right-top-first-main {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+
+.right-top-first-main {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left-top-first-main span {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #616161;
+}
+
+.top-first-main {
+  display: grid;
+  padding-bottom: 25px;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid lightgrey;
+}
+
+.first-main.box {
+  padding: 30px 25px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 1px lightgrey;
+  margin-bottom: 35px;
+}
+
+a.buy-now {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 55%;
+  left: 20%;
+  text-decoration: none;
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  text-align: center;
+  line-height: 40px;
+  border: 2px solid black;
+  text-transform: uppercase;
+  color: black;
+}
+a.buy-now:hover {
+  border: 2px solid #ffffff;
+}
+.big-banner-right {
+  position: relative;
+  margin-bottom: 35px;
+}
+
 button.button-subscribe {
   width: 50%;
   height: 40px;
@@ -128,9 +233,9 @@ a.sub-menu-horizontal-item {
   color: #333333;
   display: block;
   width: 100%;
-  height: 45px;
+  height: 51px;
   text-transform: capitalize;
-  line-height: 45px;
+  line-height: 51px;
   border-bottom: 1px solid lightgray;
   font-size: 16px;
 }
@@ -261,6 +366,9 @@ input#search-header {
   border-right: 2px solid #ffffff;
   text-align: center;
   padding: 0 20px;
+}
+.small-menu-header a:last-child {
+  padding-right: 0;
 }
 .small-menu-header a:hover {
   color: #f10e34;
