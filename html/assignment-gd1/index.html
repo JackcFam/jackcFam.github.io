@@ -1,491 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment GD1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assignment GD1</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <div class="wrap">
-    <header class="header-main" id="header">
-      <div class="container-header">
-        <div class="logo">
-          <a href="#">
-            <img src="image/logo-main.png" alt="Market Supply" />
-          </a>
-        </div>
-        <!-- end-logo -->
-        <div class="right-header">
-          <div class="small-menu-header">
-            <a href="#">My Account</a>
-            <a href="#">Wishlist</a>
-            <a href="#">My Cart</a>
-            <a href="#">Checkout</a>
-            <a href="#">Login</a>
+  <body>
+    <div class="wrap">
+      <header class="header-main" id="header">
+        <div class="container-header">
+          <div class="logo">
+            <a href="#">
+              <img src="image/logo-main.png" alt="Market Supply" />
+            </a>
           </div>
-          <div class="search-header-body">
-            <div class="search-header">
-              <input type="text" name="search-header" id="search-header" />
-              <a class="button-search-header" href="#">Search</a>
+          <!-- end-logo -->
+          <div class="right-header">
+            <div class="small-menu-header">
+              <a href="#">My Account</a>
+              <a href="#">Wishlist</a>
+              <a href="#">My Cart</a>
+              <a href="#">Checkout</a>
+              <a href="#">Login</a>
             </div>
-            <div class="cart">
-              <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <div class="search-header-body">
+              <div class="search-header">
+                <input type="text" name="search-header" id="search-header" />
+                <a class="button-search-header" href="#">Search</a>
+              </div>
+              <div class="cart">
+                <a href="#"
+                  ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+                ></a>
+                <div>
+                  <p class="information-cart">TOTAL</p>
+                  <p class="information-cart">$600.00</p>
+                </div>
+              </div>
+            </div>
+            <!-- end-search-menu -->
+          </div>
+        </div>
+        <nav class="menu-body">
+          <ul class="lists-menu">
+            <li class="menu-body-dropdown">
+              <a href="#" class="item-menu-dropdown">Clothing </a>
+            </li>
+            <li class="menu-body-dropdown">
+              <a href="#" class="item-menu-dropdown">Electronics Hot</a>
+            </li>
+            <li class="menu-body-dropdown">
+              <a href="#" class="item-menu-dropdown">Health & Beauty</a>
+            </li>
+            <li class="menu-body-dropdown">
+              <a href="#" class="item-menu-dropdown">Watches</a>
+            </li>
+            <li class="menu-body-dropdown">
+              <a href="#" class="item-menu-dropdown">Jewellery</a>
+            </li>
+            <li class="menu-body-dropdown">
+              <a href="#" class="item-menu-dropdown">Shoes</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- end-header -->
+      <main class="main-content">
+        <div class="slide-left">
+          <div class="sub-menu-horizontal">
+            <a href="#" class="sub-menu-horizontal-item">Clothing</a>
+            <a href="#" class="sub-menu-horizontal-item">Electronics</a>
+            <a href="#" class="sub-menu-horizontal-item">Shoes</a>
+            <a href="#" class="sub-menu-horizontal-item">Watches</a>
+            <a href="#" class="sub-menu-horizontal-item">Jewellery</a>
+            <a href="#" class="sub-menu-horizontal-item">Health and Beauty</a>
+            <a href="#" class="sub-menu-horizontal-item">Kids and Babies</a>
+            <a href="#" class="sub-menu-horizontal-item">Sports</a>
+            <a href="#" class="sub-menu-horizontal-item">Home and Garden</a>
+          </div>
+          <!-- end-sub-menu -->
+
+          <div class="hot-deals box-menu-left">
+            <div class="upper-part-box-menu-left">
+              <div class="title-box-menu-left">
+                <span>Hot Deals</span>
+              </div>
+              <div class="button-next-back-box-menu-left">
+                <a href="#" class="back-box-menu"
+                  ><i class="fa fa-caret-left" aria-hidden="true"></i
+                ></a>
+                <a href="#" class="next-box-menu"
+                  ><i class="fa fa-caret-right" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <!--end-upper-part-box-menu-left -->
+            <div class="bottom-box-menu-left">
               <div>
-                <p class="information-cart">TOTAL</p>
-                <p class="information-cart">$600.00</p>
+                <a href="#"
+                  ><img src="image/Untitled-1.png" alt="img-hot-deal"
+                /></a>
+                <p class="name-hot-deals">Lorem ipsum dolor</p>
+                <p class="price">
+                  <del>$100.00</del> &nbsp;&nbsp;
+                  <span>$90.00 </span>
+                </p>
               </div>
             </div>
+            <!-- end-bottom-box-menu-left -->
           </div>
-          <!-- end-search-menu -->
-        </div>
-      </div>
-      <nav class="menu-body">
-        <ul class="lists-menu">
-          <li class="menu-body-dropdown">
-            <a href="#" class="item-menu-dropdown">Clothing </a>
-          </li>
-          <li class="menu-body-dropdown">
-            <a href="#" class="item-menu-dropdown">Electronics Hot</a>
-          </li>
-          <li class="menu-body-dropdown">
-            <a href="#" class="item-menu-dropdown">Health & Beauty</a>
-          </li>
-          <li class="menu-body-dropdown">
-            <a href="#" class="item-menu-dropdown">Watches</a>
-          </li>
-          <li class="menu-body-dropdown">
-            <a href="#" class="item-menu-dropdown">Jewellery</a>
-          </li>
-          <li class="menu-body-dropdown">
-            <a href="#" class="item-menu-dropdown">Shoes</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- end-header -->
-    <main class="main-content">
-      <div class="slide-left">
-        <div class="sub-menu-horizontal">
-          <a href="#" class="sub-menu-horizontal-item">Clothing</a>
-          <a href="#" class="sub-menu-horizontal-item">Electronics</a>
-          <a href="#" class="sub-menu-horizontal-item">Shoes</a>
-          <a href="#" class="sub-menu-horizontal-item">Watches</a>
-          <a href="#" class="sub-menu-horizontal-item">Jewellery</a>
-          <a href="#" class="sub-menu-horizontal-item">Health and Beauty</a>
-          <a href="#" class="sub-menu-horizontal-item">Kids and Babies</a>
-          <a href="#" class="sub-menu-horizontal-item">Sports</a>
-          <a href="#" class="sub-menu-horizontal-item">Home and Garden</a>
-        </div>
-        <!-- end-sub-menu -->
+          <!-- end-hot-deals -->
 
-        <div class="hot-deals box-menu-left">
-          <div class="upper-part-box-menu-left">
-            <div class="title-box-menu-left">
-              <span>Hot Deals</span>
+          <div class="special-deal box-menu-left">
+            <div class="upper-part-box-menu-left">
+              <div class="title-box-menu-left">
+                <span>Special Deal</span>
+              </div>
+              <div class="button-next-back-box-menu-left">
+                <a href="#" class="back-box-menu"
+                  ><i class="fa fa-caret-left" aria-hidden="true"></i
+                ></a>
+                <a href="#" class="next-box-menu"
+                  ><i class="fa fa-caret-right" aria-hidden="true"></i
+                ></a>
+              </div>
             </div>
-            <div class="button-next-back-box-menu-left">
-              <a href="#" class="back-box-menu"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
-              <a href="#" class="next-box-menu"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <!--end-upper-part-box-menu-left -->
+            <div class="bottom-box-menu-left">
+              <div>
+                <a href="#"><img src="image/bag.png" alt="img-hot-deal" /></a>
+                <p class="name-hot-deals">Lorem ipsum dolor</p>
+                <p class="price">
+                  <del>$100.00</del> &nbsp;&nbsp;
+                  <span>$90.00 </span>
+                </p>
+              </div>
+            </div>
+            <!-- end-bottom-box-menu-left -->
+          </div>
+          <!-- end-special-deals -->
+
+          <div class="newsletter">
+            <div class="top-newsletter">
+              <div class="title-newsletter">
+                <span>Newsletter</span>
+              </div>
+            </div>
+            <div class="bottom-newsletter">
+              <form action="subscribe">
+                <label for="subscribe">Sign Up for Our Newsletter!</label>
+                <input
+                  type="text"
+                  name="email-subscribe"
+                  id="email-subscribe"
+                />
+                <button class="button-subscribe">subscribe</button>
+              </form>
             </div>
           </div>
-          <!--end-upper-part-box-menu-left -->
-          <div class="bottom-box-menu-left">
-            <div>
-              <a href="#"><img src="image/Untitled-1.png" alt="img-hot-deal" /></a>
-              <p class="name-hot-deals">Lorem ipsum dolor</p>
-              <p class="price">
-                <del>$100.00</del> &nbsp;&nbsp;
-                <span>$90.00 </span>
+          <!-- end-newsletter -->
+          <div class="banner-advertisement-left">
+            <a href="#"><img src="image/banner-left.png" alt="photo" /></a>
+          </div>
+        </div>
+        <!-- end-slide-left -->
+        <div class="slide-right">
+          <div class="big-banner-right">
+            <img
+              src="image/banner-right-big.png"
+              alt="shop now"
+              class="img-banner-right"
+            />
+            <a href="#" class="buy-now">Shop Now</a>
+          </div>
+          <!-- end-big-banner-right -->
+          <div class="main-slide-right">
+            <div class="first-main box">
+              <div class="top-first-main">
+                <div class="left-top-first-main">
+                  <span>New Products</span>
+                </div>
+                <div class="right-top-first-main">
+                  <div class="menu-fast-right-top-first-main">
+                    <a href="#" class="menu-sub-right-top-first-main">All</a>
+                    <a href="#" class="menu-sub-right-top-first-main"
+                      >Clothing</a
+                    >
+                    <a href="#" class="menu-sub-right-top-first-main"
+                      >Electronics</a
+                    >
+                    <a href="#" class="menu-sub-right-top-first-main">Shoes</a>
+                  </div>
+                  <div class="button-next-back-right-top-first-main">
+                    <a href="#" class="back-box-menu"
+                      ><i class="fa fa-caret-left" aria-hidden="true"></i
+                    ></a>
+                    <a href="#" class="next-box-menu"
+                      ><i class="fa fa-caret-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end-top-first-main -->
+              <div class="bottom-first-main">
+                <div class="item-bottom-first-main">
+                  <img
+                    src="image/item1-bottom-first-main.png"
+                    alt="img-first-main"
+                  />
+                  <div class="name-item-bottom-first-main">
+                    Lorem ipsum dolor
+                  </div>
+                  <div class="price-item-bottom-first-main">
+                    <del>$100.00</del> &nbsp;&nbsp;
+                    <span>$90.00</span>
+                  </div>
+                </div>
+                <!-- end-item-bottom-first-main -->
+                <div class="item-bottom-first-main">
+                  <img
+                    src="image/item1-bottom-first-main.png"
+                    alt="img-first-main"
+                  />
+                  <div class="name-item-bottom-first-main">
+                    Lorem ipsum dolor
+                  </div>
+                  <div class="price-item-bottom-first-main">
+                    <del>$100.00</del> &nbsp;&nbsp;
+                    <span>$90.00</span>
+                  </div>
+                </div>
+                <!-- end-item-bottom-first-main -->
+                <div class="item-bottom-first-main">
+                  <img
+                    src="image/item1-bottom-first-main.png"
+                    alt="img-first-main"
+                  />
+                  <div class="name-item-bottom-first-main">
+                    Lorem ipsum dolor
+                  </div>
+                  <div class="price-item-bottom-first-main">
+                    <del>$100.00</del> &nbsp;&nbsp;
+                    <span>$90.00</span>
+                  </div>
+                </div>
+                <!-- end-item-bottom-first-main -->
+                <div class="item-bottom-first-main">
+                  <img
+                    src="image/item1-bottom-first-main.png"
+                    alt="img-first-main"
+                  />
+                  <div class="name-item-bottom-first-main">
+                    Lorem ipsum dolor
+                  </div>
+                  <div class="price-item-bottom-first-main">
+                    <del>$100.00</del> &nbsp;&nbsp;
+                    <span>$90.00</span>
+                  </div>
+                </div>
+                <!-- end-item-bottom-first-main -->
+              </div>
+            </div>
+            <!-- end-first-main -->
+            <div class="second-main">
+              <a href="#" class="left-second-main"
+                ><img src="image/second-left.png" alt=""
+              /></a>
+              <a href="#" class="left-second-main"
+                ><img src="image/second-right.png" alt=""
+              /></a>
+            </div>
+            <!-- end-second-main -->
+            <div class="third-main box">
+              <div class="top-first-main">
+                <div class="left-top-first-main">
+                  <span>Latest Products</span>
+                </div>
+                <div class="right-top-first-main">
+                  <div class="menu-fast-right-top-first-main">
+                    <a href="#" class="menu-sub-right-top-first-main">All</a>
+                    <a href="#" class="menu-sub-right-top-first-main"
+                      >Clothing</a
+                    >
+                    <a href="#" class="menu-sub-right-top-first-main"
+                      >Electronics</a
+                    >
+                    <a href="#" class="menu-sub-right-top-first-main">Shoes</a>
+                  </div>
+                  <div class="button-next-back-right-top-first-main">
+                    <a href="#" class="back-box-menu"
+                      ><i class="fa fa-caret-left" aria-hidden="true"></i
+                    ></a>
+                    <a href="#" class="next-box-menu"
+                      ><i class="fa fa-caret-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- end-top-first-main -->
+              <div class="bottom-first-main">
+                <div class="item-bottom-first-main">
+                  <img
+                    src="image/item1-bottom-first-main.png"
+                    alt="img-first-main"
+                  />
+                  <div class="name-item-bottom-first-main">
+                    Lorem ipsum dolor
+                  </div>
+                  <div class="price-item-bottom-first-main">
+                    <del>$100.00</del> &nbsp;&nbsp;
+                    <span>$90.00</span>
+                  </div>
+                </div>
+                <!-- end-item-bottom-first-main -->
+                <div class="item-bottom-first-main">
+                  <img
+                    src="image/item1-bottom-first-main.png"
+                    alt="img-first-main"
+                  />
+                  <div class="name-item-bottom-first-main">
+                    Lorem ipsum dolor
+                  </div>
+                  <div class="price-item-bottom-first-main">
+                    <del>$100.00</del> &nbsp;&nbsp;
+                    <span>$90.00</span>
+                  </div>
+                </div>
+                <!-- end-item-bottom-first-main -->
+                <div class="item-bottom-first-main">
+                  <img
+                    src="image/item1-bottom-first-main.png"
+                    alt="img-first-main"
+                  />
+                  <div class="name-item-bottom-first-main">
+                    Lorem ipsum dolor
+                  </div>
+                  <div class="price-item-bottom-first-main">
+                    <del>$100.00</del> &nbsp;&nbsp;
+                    <span>$90.00</span>
+                  </div>
+                </div>
+                <!-- end-item-bottom-first-main -->
+                <div class="item-bottom-first-main">
+                  <img
+                    src="image/item1-bottom-first-main.png"
+                    alt="img-first-main"
+                  />
+                  <div class="name-item-bottom-first-main">
+                    Lorem ipsum dolor
+                  </div>
+                  <div class="price-item-bottom-first-main">
+                    <del>$100.00</del> &nbsp;&nbsp;
+                    <span>$90.00</span>
+                  </div>
+                </div>
+                <!-- end-item-bottom-first-main -->
+              </div>
+            </div>
+            <!-- end-third-main -->
+            <div class="fourth-main">
+              <img
+                src="image/banner-laptop.png"
+                alt=""
+                class="img-fourth-main"
+              />
+              <div class="content-fourth-main">
+                <p class="name">Beautiful Laptop</p>
+                <p class="last-name">Retina Display 18” Ready !</p>
+                <a href="#">Shop now</a>
+              </div>
+            </div>
+            <!-- end-fourth-main -->
+            <div class="fifth-main">
+              <div class="top-fifth-main">
+                <div class="left-top-first-main">
+                  <span>Featured products</span>
+                </div>
+                <div class="right-top-fifth-">
+                  <a href="#" class="back-box-menu"
+                    ><i class="fa fa-caret-left" aria-hidden="true"></i
+                  ></a>
+                  <a href="#" class="next-box-menu"
+                    ><i class="fa fa-caret-right" aria-hidden="true"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- end-top-fifth-main -->
+              <div class="bottom-fifth-main">
+                <div class="item-bottom-fifth-main">
+                  <img src="image/fifth-img1.png" alt="img-fifth-main" />
+                  <div class="information-item-bottom-fifth-main">
+                    <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
+                    <div class="price-item-bottom-fifth-main">
+                      <del>$100.00</del> &nbsp;&nbsp;
+                      <span>$90.00</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end-item-bottom-fifth-main -->
+                <div class="item-bottom-fifth-main">
+                  <img src="image/fifth-img2.png" alt="img-fifth-main" />
+                  <div class="information-item-bottom-fifth-main">
+                    <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
+                    <div class="price-item-bottom-fifth-main">
+                      <del>$100.00</del> &nbsp;&nbsp;
+                      <span>$90.00</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end-item-bottom-fifth-main -->
+                <div class="item-bottom-fifth-main">
+                  <img src="image/fifth-img3.png" alt="img-fifth-main" />
+                  <div class="information-item-bottom-fifth-main">
+                    <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
+                    <div class="price-item-bottom-fifth-main">
+                      <del>$100.00</del> &nbsp;&nbsp;
+                      <span>$90.00</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end-item-bottom-fifth-main -->
+                <div class="item-bottom-fifth-main">
+                  <img src="image/fifth-img4.png" alt="img-fifth-main" />
+                  <div class="information-item-bottom-fifth-main">
+                    <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
+                    <div class="price-item-bottom-fifth-main">
+                      <del>$100.00</del> &nbsp;&nbsp;
+                      <span>$90.00</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end-item-bottom-fifth-main -->
+                <div class="item-bottom-fifth-main">
+                  <img src="image/fifth-img6.png" alt="img-fifth-main" />
+                  <div class="information-item-bottom-fifth-main">
+                    <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
+                    <div class="price-item-bottom-fifth-main">
+                      <del>$100.00</del> &nbsp;&nbsp;
+                      <span>$90.00</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end-item-bottom-fifth-main -->
+                <div class="item-bottom-fifth-main">
+                  <img src="image/fifth-img7.png" alt="img-fifth-main" />
+                  <div class="information-item-bottom-fifth-main">
+                    <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
+                    <div class="price-item-bottom-fifth-main">
+                      <del>$100.00</del> &nbsp;&nbsp;
+                      <span>$90.00</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- end-item-bottom-fifth-main -->
+              </div>
+              <!-- end-bottom-fifth-main -->
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer-main">
+        <div class="famous-brand">
+          <a href="#"><img src="image/demo-brand-1.png" alt="logo-brand" /></a>
+          <a href="#"><img src="image/logo-brand-2.png" alt="logo-brand" /></a>
+          <a href="#"><img src="image/demo-brand-3.png" alt="logo-brand" /></a>
+          <a href="#"><img src="image/demo-brand-4.png" alt="logo-brand" /></a>
+          <a href="#"><img src="image/demo-brand-5.png" alt="logo-brand" /></a>
+          <a href="#"><img src="image/demo-brand-6.png" alt="logo-brand" /></a>
+        </div>
+        <div class="about-us">
+          <div class="information-content-about-us">
+            <div class="address-us">
+              <div class="logo-about-us">
+                <a href="#"><img src="image/logo-main.png" alt="logo" /></a>
+              </div>
+              <p class="content-address-us">
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                velit it’s a cold world out there.
               </p>
-            </div>
-          </div>
-          <!-- end-bottom-box-menu-left -->
-        </div>
-        <!-- end-hot-deals -->
-
-        <div class="special-deal box-menu-left">
-          <div class="upper-part-box-menu-left">
-            <div class="title-box-menu-left">
-              <span>Special Deal</span>
-            </div>
-            <div class="button-next-back-box-menu-left">
-              <a href="#" class="back-box-menu"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
-              <a href="#" class="next-box-menu"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <!--end-upper-part-box-menu-left -->
-          <div class="bottom-box-menu-left">
-            <div>
-              <a href="#"><img src="image/bag.png" alt="img-hot-deal" /></a>
-              <p class="name-hot-deals">Lorem ipsum dolor</p>
-              <p class="price">
-                <del>$100.00</del> &nbsp;&nbsp;
-                <span>$90.00 </span>
-              </p>
-            </div>
-          </div>
-          <!-- end-bottom-box-menu-left -->
-        </div>
-        <!-- end-special-deals -->
-
-        <div class="newsletter">
-          <div class="top-newsletter">
-            <div class="title-newsletter">
-              <span>Newsletter</span>
-            </div>
-          </div>
-          <div class="bottom-newsletter">
-            <form action="subscribe">
-              <label for="subscribe">Sign Up for Our Newsletter!</label>
-              <input type="text" name="email-subscribe" id="email-subscribe" />
-              <button class="button-subscribe">subscribe</button>
-            </form>
-          </div>
-        </div>
-        <!-- end-newsletter -->
-        <div class="banner-advertisement-left">
-          <a href="#"><img src="image/banner-left.png" alt="photo" /></a>
-        </div>
-      </div>
-      <!-- end-slide-left -->
-      <div class="slide-right">
-        <div class="big-banner-right">
-          <img src="image/banner-right-big.png" alt="shop now" class="img-banner-right" />
-          <a href="#" class="buy-now">Shop Now</a>
-        </div>
-        <!-- end-big-banner-right -->
-        <div class="main-slide-right">
-          <div class="first-main box">
-            <div class="top-first-main">
-              <div class="left-top-first-main">
-                <span>New Products</span>
-              </div>
-              <div class="right-top-first-main">
-                <div class="menu-fast-right-top-first-main">
-                  <a href="#" class="menu-sub-right-top-first-main">All</a>
-                  <a href="#" class="menu-sub-right-top-first-main">Clothing</a>
-                  <a href="#" class="menu-sub-right-top-first-main">Electronics</a>
-                  <a href="#" class="menu-sub-right-top-first-main">Shoes</a>
-                </div>
-                <div class="button-next-back-right-top-first-main">
-                  <a href="#" class="back-box-menu"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
-                  <a href="#" class="next-box-menu"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                </div>
+              <div class="address">
+                <a href="#"
+                  ><i class="fa fa-map-marker" aria-hidden="true"></i
+                  >&nbsp;&nbsp;0123 Main Road, Your City, NY 123456</a
+                >
+                <a href="#"
+                  ><i class="fa fa-phone" aria-hidden="true"></i
+                  >&nbsp;&nbsp;(000) 2345 - 6789</a
+                >
+                <a href="#"
+                  ><i class="fa fa-envelope" aria-hidden="true"></i
+                  >&nbsp;&nbsp;nfo@psdfreebies.com</a
+                >
               </div>
             </div>
-            <!-- end-top-first-main -->
-            <div class="bottom-first-main">
-              <div class="item-bottom-first-main">
-                <img src="image/item1-bottom-first-main.png" alt="img-first-main" />
-                <div class="name-item-bottom-first-main">
-                  Lorem ipsum dolor
-                </div>
-                <div class="price-item-bottom-first-main">
-                  <del>$100.00</del> &nbsp;&nbsp;
-                  <span>$90.00</span>
-                </div>
-              </div>
-              <!-- end-item-bottom-first-main -->
-              <div class="item-bottom-first-main">
-                <img src="image/item1-bottom-first-main.png" alt="img-first-main" />
-                <div class="name-item-bottom-first-main">
-                  Lorem ipsum dolor
-                </div>
-                <div class="price-item-bottom-first-main">
-                  <del>$100.00</del> &nbsp;&nbsp;
-                  <span>$90.00</span>
-                </div>
-              </div>
-              <!-- end-item-bottom-first-main -->
-              <div class="item-bottom-first-main">
-                <img src="image/item1-bottom-first-main.png" alt="img-first-main" />
-                <div class="name-item-bottom-first-main">
-                  Lorem ipsum dolor
-                </div>
-                <div class="price-item-bottom-first-main">
-                  <del>$100.00</del> &nbsp;&nbsp;
-                  <span>$90.00</span>
-                </div>
-              </div>
-              <!-- end-item-bottom-first-main -->
-              <div class="item-bottom-first-main">
-                <img src="image/item1-bottom-first-main.png" alt="img-first-main" />
-                <div class="name-item-bottom-first-main">
-                  Lorem ipsum dolor
-                </div>
-                <div class="price-item-bottom-first-main">
-                  <del>$100.00</del> &nbsp;&nbsp;
-                  <span>$90.00</span>
-                </div>
-              </div>
-              <!-- end-item-bottom-first-main -->
-            </div>
-          </div>
-          <!-- end-first-main -->
-          <div class="second-main">
-            <a href="#" class="left-second-main"><img src="image/second-left.png" alt="" /></a>
-            <a href="#" class="left-second-main"><img src="image/second-right.png" alt="" /></a>
-          </div>
-          <!-- end-second-main -->
-          <div class="third-main box">
-            <div class="top-first-main">
-              <div class="left-top-first-main">
-                <span>Latest Products</span>
-              </div>
-              <div class="right-top-first-main">
-                <div class="menu-fast-right-top-first-main">
-                  <a href="#" class="menu-sub-right-top-first-main">All</a>
-                  <a href="#" class="menu-sub-right-top-first-main">Clothing</a>
-                  <a href="#" class="menu-sub-right-top-first-main">Electronics</a>
-                  <a href="#" class="menu-sub-right-top-first-main">Shoes</a>
-                </div>
-                <div class="button-next-back-right-top-first-main">
-                  <a href="#" class="back-box-menu"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
-                  <a href="#" class="next-box-menu"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                </div>
+            <!-- end-address-us -->
+            <div class="information">
+              <div class="footer-title">Information</div>
+              <div class="items-information">
+                <a href="#">Our Story</a>
+                <a href="#">Privacy & Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Shipping & Delivery</a>
+                <a href="#">Careers</a>
+                <a href="#">FAQs</a>
               </div>
             </div>
-            <!-- end-top-first-main -->
-            <div class="bottom-first-main">
-              <div class="item-bottom-first-main">
-                <img src="image/item1-bottom-first-main.png" alt="img-first-main" />
-                <div class="name-item-bottom-first-main">
-                  Lorem ipsum dolor
-                </div>
-                <div class="price-item-bottom-first-main">
-                  <del>$100.00</del> &nbsp;&nbsp;
-                  <span>$90.00</span>
-                </div>
-              </div>
-              <!-- end-item-bottom-first-main -->
-              <div class="item-bottom-first-main">
-                <img src="image/item1-bottom-first-main.png" alt="img-first-main" />
-                <div class="name-item-bottom-first-main">
-                  Lorem ipsum dolor
-                </div>
-                <div class="price-item-bottom-first-main">
-                  <del>$100.00</del> &nbsp;&nbsp;
-                  <span>$90.00</span>
-                </div>
-              </div>
-              <!-- end-item-bottom-first-main -->
-              <div class="item-bottom-first-main">
-                <img src="image/item1-bottom-first-main.png" alt="img-first-main" />
-                <div class="name-item-bottom-first-main">
-                  Lorem ipsum dolor
-                </div>
-                <div class="price-item-bottom-first-main">
-                  <del>$100.00</del> &nbsp;&nbsp;
-                  <span>$90.00</span>
-                </div>
-              </div>
-              <!-- end-item-bottom-first-main -->
-              <div class="item-bottom-first-main">
-                <img src="image/item1-bottom-first-main.png" alt="img-first-main" />
-                <div class="name-item-bottom-first-main">
-                  Lorem ipsum dolor
-                </div>
-                <div class="price-item-bottom-first-main">
-                  <del>$100.00</del> &nbsp;&nbsp;
-                  <span>$90.00</span>
-                </div>
-              </div>
-              <!-- end-item-bottom-first-main -->
-            </div>
-          </div>
-          <!-- end-third-main -->
-          <div class="fourth-main">
-            <img src="image/banner-laptop.png" alt="" class="img-fourth-main" />
-            <div class="content-fourth-main">
-              <p class="name">Beautiful Laptop</p>
-              <p class="last-name">Retina Display 18” Ready !</p>
-              <a href="#">Shop now</a>
-            </div>
-          </div>
-          <!-- end-fourth-main -->
-          <div class="fifth-main">
-            <div class="top-fifth-main">
-              <div class="left-top-first-main">
-                <span>Featured products</span>
-              </div>
-              <div class="right-top-fifth-">
-                <a href="#" class="back-box-menu"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
-                <a href="#" class="next-box-menu"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+            <div class="our-social">
+              <div class="footer-title">Our Social</div>
+              <div class="items-our-social">
+                <a href="#"
+                  ><i class="fa fa-google-plus" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Google+</a
+                >
+                <a href="#"
+                  ><i class="fa fa-pinterest-p" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Pinterest</a
+                >
+                <a href="#"
+                  ><i class="fa fa-vimeo" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Vimeo</a
+                >
+                <a href="#"
+                  ><i class="fa fa-instagram" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Instagram</a
+                >
+                <a href="#"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Facebook</a
+                >
+                <a href="#"
+                  ><i class="fa fa-twitter" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Twitter</a
+                >
+                <a href="#"
+                  ><i class="fa fa-rss" aria-hidden="true"></i
+                  >&nbsp;&nbsp;RSS</a
+                >
+                <a href="#"
+                  ><i class="fa fa-youtube-square" aria-hidden="true"></i
+                  >&nbsp;&nbsp;Youtube</a
+                >
               </div>
             </div>
-            <!-- end-top-fifth-main -->
-            <div class="bottom-fifth-main">
-              <div class="item-bottom-fifth-main">
-                <img src="image/fifth-img1.png" alt="img-fifth-main" />
-                <div class="information-item-bottom-fifth-main">
-                  <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
-                  <div class="price-item-bottom-fifth-main">
-                    <del>$100.00</del> &nbsp;&nbsp;
-                    <span>$90.00</span>
-                  </div>
-                </div>
+            <!-- end-our-social -->
+            <div class="opening-time">
+              <div class="footer-title">Opening time</div>
+              <div class="time">
+                <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
+                <p>Monday - Friday: 08:30 am - 09:30 pm</p>
+                <p>Sat - Sun: 09:00 am - 10:00 pm</p>
               </div>
-              <!-- end-item-bottom-fifth-main -->
-              <div class="item-bottom-fifth-main">
-                <img src="image/fifth-img2.png" alt="img-fifth-main" />
-                <div class="information-item-bottom-fifth-main">
-                  <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
-                  <div class="price-item-bottom-fifth-main">
-                    <del>$100.00</del> &nbsp;&nbsp;
-                    <span>$90.00</span>
-                  </div>
-                </div>
+              <div class="footer-title">Payment Option</div>
+              <div class="option-pay">
+                <a href="#"
+                  ><i class="fa fa-cc-mastercard" aria-hidden="true"></i
+                ></a>
+                <a href="#"
+                  ><i class="fa fa-cc-discover" aria-hidden="true"></i
+                ></a>
+                <a href="#"><i class="fa fa-cc-amex" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a>
+                <a href="#"
+                  ><i class="fa fa-cc-stripe" aria-hidden="true"></i
+                ></a>
+                <a href="#"><i class="fa fa-money" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-cc-jcb" aria-hidden="true"></i></a>
               </div>
-              <!-- end-item-bottom-fifth-main -->
-              <div class="item-bottom-fifth-main">
-                <img src="image/fifth-img3.png" alt="img-fifth-main" />
-                <div class="information-item-bottom-fifth-main">
-                  <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
-                  <div class="price-item-bottom-fifth-main">
-                    <del>$100.00</del> &nbsp;&nbsp;
-                    <span>$90.00</span>
-                  </div>
-                </div>
-              </div>
-              <!-- end-item-bottom-fifth-main -->
-              <div class="item-bottom-fifth-main">
-                <img src="image/fifth-img4.png" alt="img-fifth-main" />
-                <div class="information-item-bottom-fifth-main">
-                  <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
-                  <div class="price-item-bottom-fifth-main">
-                    <del>$100.00</del> &nbsp;&nbsp;
-                    <span>$90.00</span>
-                  </div>
-                </div>
-              </div>
-              <!-- end-item-bottom-fifth-main -->
-              <div class="item-bottom-fifth-main">
-                <img src="image/fifth-img6.png" alt="img-fifth-main" />
-                <div class="information-item-bottom-fifth-main">
-                  <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
-                  <div class="price-item-bottom-fifth-main">
-                    <del>$100.00</del> &nbsp;&nbsp;
-                    <span>$90.00</span>
-                  </div>
-                </div>
-              </div>
-              <!-- end-item-bottom-fifth-main -->
-              <div class="item-bottom-fifth-main">
-                <img src="image/fifth-img7.png" alt="img-fifth-main" />
-                <div class="information-item-bottom-fifth-main">
-                  <p class="name-item-bottom-fifth-main">Lorem ipsum dolor</p>
-                  <div class="price-item-bottom-fifth-main">
-                    <del>$100.00</del> &nbsp;&nbsp;
-                    <span>$90.00</span>
-                  </div>
-                </div>
-              </div>
-              <!-- end-item-bottom-fifth-main -->
             </div>
-            <!-- end-bottom-fifth-main -->
+            <!-- end-opening-time -->
           </div>
         </div>
-      </div>
-    </main>
-    <footer class="footer-main">
-      <div class="famous-brand">
-        <img src="image/demo-brand-1.png" alt="logo-brand" />
-        <img src="image/logo-brand-2.png" alt="logo-brand" />
-        <img src="image/demo-brand-3.png" alt="logo-brand" />
-        <img src="image/demo-brand-4.png" alt="logo-brand" />
-        <img src="image/demo-brand-5.png" alt="logo-brand" />
-        <img src="image/demo-brand-6.png" alt="logo-brand" />
-      </div>
-      <div class="about-us">
-        <div class="information-content-about-us">
-          <div class="address-us">
-            <div class="logo-about-us">
-              <a href="#"><img src="image/logo-main.png" alt="logo" /></a>
+        <!-- end-about-us -->
+        <div class="end-footer">
+          <div class="content-end-footer">
+            <div class="keyword">
+              <a href="#">Sitemap</a>
+              <a href="#">Searchs</a>
+              <a href="#">Searchs</a>
+              <a href="#">Advance</a>
+              <a href="#">Searchs</a>
+              <a href="#">Contact Us</a>
             </div>
-            <p class="content-address-us">
-              This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
-              velit it’s a cold world out there.
-            </p>
-            <div class="address">
-              <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;0123 Main Road, Your City, NY
-                123456</a>
-              <a href="#"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;(000) 2345 - 6789</a>
-              <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;nfo@psdfreebies.com</a>
+            <div class="license">
+              <a href="#">© 2016 PSDFreebies.com</a>
+              <a href="#">All Rights Reserved</a>
             </div>
-          </div>
-          <!-- end-address-us -->
-          <div class="information">
-            <div class="footer-title">Information</div>
-            <div class="items-information">
-              <a href="#">Our Story</a>
-              <a href="#">Privacy & Policy</a>
-              <a href="#">Terms & Conditions</a>
-              <a href="#">Shipping & Delivery</a>
-              <a href="#">Careers</a>
-              <a href="#">FAQs</a>
-            </div>
-          </div>
-          <div class="our-social">
-            <div class="footer-title">Our Social</div>
-            <div class="items-our-social">
-              <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i>&nbsp;&nbsp;Google+</a>
-              <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i>&nbsp;&nbsp;Pinterest</a>
-              <a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i>&nbsp;&nbsp;Vimeo</a>
-              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;Instagram</a>
-              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</a>
-              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;&nbsp;Twitter</a>
-              <a href="#"><i class="fa fa-rss" aria-hidden="true"></i>&nbsp;&nbsp;RSS</a>
-              <a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i>&nbsp;&nbsp;Youtube</a>
-            </div>
-          </div>
-          <!-- end-our-social -->
-          <div class="opening-time">
-            <div class="footer-title">Opening time</div>
-            <div class="time">
-              <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a>
-              <p>Monday - Friday: 08:30 am - 09:30 pm</p>
-              <p>Sat - Sun: 09:00 am - 10:00 pm</p>
-            </div>
-            <div class="footer-title">Payment Option</div>
-            <div class="option-pay">
-              <a href="#"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-cc-discover" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-cc-amex" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-cc-stripe" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-money" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-cc-jcb" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <!-- end-opening-time -->
-        </div>
-      </div>
-      <!-- end-about-us -->
-      <div class="end-footer">
-        <div class="content-end-footer">
-          <div class="keyword">
-            <a href="#">Sitemap</a>
-            <a href="#">Searchs</a>
-            <a href="#">Searchs</a>
-            <a href="#">Advance</a>
-            <a href="#">Searchs</a>
-            <a href="#">Contact Us</a>
-          </div>
-          <div class="license">
-            <a href="#">© 2016 PSDFreebies.com</a>
-            <a href="#">All Rights Reserved</a>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
-  <script src="https://kit.fontawesome.com/c6304979ba.js" crossorigin="anonymous"></script>
-</body>
-
+      </footer>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/c6304979ba.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -4,10 +4,105 @@
   box-sizing: border-box;
 }
 
+.famous-brand {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f10e34;
+  align-items: center;
+  height: 185px;
+}
+
+footer.footer-main {
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+p.name-item-bottom-fifth-main {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+.item-bottom-fifth-main img {
+  display: block;
+  cursor: pointer;
+  float: left;
+  margin-right: 20px;
+}
+
+.bottom-fifth-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  grid-gap: 60px 20px;
+}
+
+.top-fifth-main {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid lightgrey;
+  margin-bottom: 20px;
+}
+
+img.img-banner-right {
+  width: 100%;
+}
+
+.fifth-main {
+  box-shadow: 0 1px 1px 1px lightgrey;
+  padding: 30px 20px;
+}
+
+.content-fourth-main a {
+  display: block;
+  width: 130px;
+  height: 45px;
+  box-shadow: 0 1px 1px 1px #f22f49;
+  background-color: #f22f49;
+  text-align: center;
+  line-height: 45px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+.content-fourth-main a:hover {
+  opacity: 1.5;
+}
+p.last-name {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #0f8ce9;
+}
+
+p.name {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #616161;
+}
+
+.content-fourth-main {
+  position: absolute;
+  right: 2%;
+  top: 25%;
+}
+
+.fourth-main {
+  margin-top: 25px;
+  border: 1px solid lightgrey;
+  box-shadow: 0 1px 1px 1px lightgrey;
+  position: relative;
+  margin-bottom: 25px;
+}
+
 .third-main {
   border: 1px solid #ffffff;
   box-shadow: 0 1px 1px 1px lightgray;
-  padding: 35px 20px;
+  padding: 25px 20px;
 }
 
 a.left-second-main {
@@ -72,13 +167,13 @@ a.menu-sub-right-top-first-main {
 
 .top-first-main {
   display: grid;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
   grid-template-columns: 1fr 2fr;
   border-bottom: 1px solid lightgrey;
 }
 
 .first-main.box {
-  padding: 30px 25px;
+  padding: 34px 20px;
   border: 1px solid #ffffff;
   background-color: #ffffff;
   box-shadow: 0 1px 1px 1px lightgrey;
@@ -106,7 +201,7 @@ a.buy-now:hover {
 }
 .big-banner-right {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 button.button-subscribe {
@@ -233,7 +328,7 @@ a.sub-menu-horizontal-item {
   color: #333333;
   display: block;
   width: 100%;
-  height: 51px;
+  height: 52px;
   text-transform: capitalize;
   line-height: 51px;
   border-bottom: 1px solid lightgray;
