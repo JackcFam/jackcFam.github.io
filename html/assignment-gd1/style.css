@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.price-item-bottom-fifth-main {
+    cursor: pointer;
+}
+
 .license {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -72,7 +76,10 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
 }
-
+.option-pay a i:hover {
+  background-color: #ffffff;
+  
+}
 .title-footers i {
   color: #f10e34;
 }
@@ -88,7 +95,9 @@
   padding: 5px 0;
   text-decoration: none;
 }
-
+.title-footers:hover {
+  color: #ffffff;
+}
 .information-content-about-us {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -102,7 +111,7 @@
   justify-content: center;
   align-items: center;
   background-color: #222222;
-  padding: 0px 100px;
+  padding: 0px 200px;
 }
 
 .famous-brand {
@@ -122,6 +131,7 @@ footer.footer-main {
 p.name-item-bottom-fifth-main {
   font-size: 15px;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 
 .item-bottom-fifth-main img {
@@ -185,6 +195,7 @@ p.name {
   font-size: 24px;
   text-transform: uppercase;
   color: #616161;
+  font-family: serif;
 }
 
 .content-fourth-main {
@@ -241,6 +252,7 @@ a.left-second-main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 30px;
+  cursor: pointer;
 }
 
 a.menu-sub-right-top-first-main {
@@ -249,7 +261,9 @@ a.menu-sub-right-top-first-main {
   display: block;
   text-align: justify;
 }
-
+a.menu-sub-right-top-first-main:hover {
+  color: #f22f49;
+}
 .menu-fast-right-top-first-main {
   display: flex;
   width: 70%;
@@ -283,6 +297,7 @@ a.menu-sub-right-top-first-main {
 }
 
 a.buy-now {
+  font-size: 20px;
   position: absolute;
   z-index: 1;
   display: block;
@@ -300,6 +315,9 @@ a.buy-now {
 }
 a.buy-now:hover {
   border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: red
+
 }
 .big-banner-right {
   position: relative;
@@ -367,10 +385,12 @@ p.name-hot-deals {
   color: #616161;
   text-align: center;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 p.price {
   text-align: center;
+  cursor: pointer;
 }
 
 a.next-box-menu {
@@ -594,4 +614,10 @@ body {
   font-family: "Roboto", sans-serif;
   max-width: 1600px;
   margin: 0 auto;
+  box-shadow: 0 1px 2px 1px lightgrey;
 }
+
+/* 
+.sale{
+  text-decoration: line-through;
+} */
