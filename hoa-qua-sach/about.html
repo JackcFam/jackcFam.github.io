@@ -3,48 +3,60 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="fonts/css/all.css"/>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="header-content">
       <div class="header-left">
-        <div class="logo"> <img src="img/logo/logo_top2-1.png" alt="Logo Hoa Quả Sạch"/></div>
+        <div class="logo"><img src="img/logo/logo.png" alt="Logo Hoa Quả Sạch"/></div>
         <nav class="main-menu">
           <ul class="list-menu">
             <li class="item-list-menu"><a href="#">Trang chủ</a></li>
             <li class="item-list-menu"><a href="#">Sản phẩm</a></li>
             <li class="item-list-menu"><a href="#">Về Chúng tôi</a></li>
-            <li class="item-list-menu"><a href="#">Tin Tức </a></li>
+            <li class="item-list-menu"><a href="#">Tin Tức</a></li>
             <li class="item-list-menu"><a href="#">Liên hệ</a></li>
           </ul>
         </nav>
       </div>
       <div class="header-right">
         <div class="search">
-          <input type="text" placeholder="Tìm kiếm"/><a href="#"> </a>
+          <form class="search-form-header">
+            <input class="input-search" type="text" placeholder="Tìm kiếm"/><a class="button-search" href="#"><i class="fas fa-search header-right__icon"></i></a>
+          </form>
         </div>
-        <div class="avatar"><a href="#">
-            <div>icon</div></a></div>
-        <div class="cart"><a href="#">
-            <div>icon</div></a></div>
+        <div class="avatar"><a class="user-header" href="#"><i class="fas fa-user header-right__icon"></i></a></div>
+        <div class="cart"><a class="cart-header" href="#"><i class="fas fa-cart-arrow-down header-right__icon"></i></a></div>
       </div>
     </div>
     <h1>About</h1>
-    <footer> 
-      <div class="row">
-        <div class="col">
-          <div class="logo"></div>
-          <div class="slogan">Sự lựa chọn hàng đầu của bạn</div>
+    <footer>
+      <div class="top-footer">
+        <div class="col-1">
+          <div class="logo-footer"><img class="logo-footer-top" src="img/logo/logo.png" alt=""/></div>
+          <div class="sologan">
+            <h4>Sự lựa chọn hàng đầu cho sức khoẻ của bạn</h4>
+          </div>
         </div>
-        <div class="col">
-          <h3>liên kết nhanh</h3>
+        <div class="col-2">
+          <div class="title-footer">
+            <h3 class="title-footer-top">Liên kết nhanh</h3>
+          </div><a class="information-footer" href="#">Trang chủ</a><a class="information-footer" href="#">Sản phẩm</a><a class="information-footer" href="#"> Về chúng tôi</a><a class="information-footer" href="#">Tin tức</a><a class="information-footer" href="#">Liên hệ</a><a class="information-footer" href="#">Về trang web</a>
         </div>
-        <div class="col"> 
-          <h3>chăm sóc khách hàng</h3>
+        <div class="col-3">
+          <div class="title-footer">
+            <h3 class="title-footer-top">Chăm sóc khách hàng</h3>
+          </div><a class="information-footer" href="#">hướng dẫn mua hàng</a><a class="information-footer" href="#">Điều khoản dịch vụ của chúng tôi</a><a class="information-footer" href="#">Chính sách giao hàng, đổi trả</a>
         </div>
-        <div class="col"> 
-          <h3>địa chỉ cửa hàng</h3>
+        <div class="col-4">
+          <div class="title-footer">
+            <h3 class="title-footer-top">Địa chỉ cửa hàng</h3>
+          </div><a class="information-footer-title-big" href="#">HOA QUẢ SẠCH</a><br/><a class="information-footer" href="#">Địa chỉ : LK21 - Khu đô thị Sông Công - Hà Trì - Hà Đông - Hà Nội</a><br/><a class="information-footer" href="#">Điện thoại: 0339172861</a><br/><a class="information-footer" href="#">Email: phamnhat05111997@gmail.com</a>
+          <div class="follow-us"><a class="link-follow-footer" href="#"><i class="fab fa-facebook icon-footer"></i></a><a class="link-follow-footer" href="#"><i class="fab fa-twitter icon-footer"></i></a><a class="link-follow-footer" href="#"><i class="fab fa-youtube icon-footer"></i></a><a class="link-follow-footer" href="#"><i class="fab fa-instagram icon-footer"></i></a></div>
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

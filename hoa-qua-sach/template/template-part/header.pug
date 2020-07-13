@@ -1,7 +1,7 @@
-.container-fluid
+.header-content
     .header-left
-        .logo 
-            img(src="img/logo/logo_top2-1.png", alt="Logo Hoa Quả Sạch")
+        .logo
+            img(src="img/logo/logo.png", alt="Logo Hoa Quả Sạch")
         nav.main-menu
             ul.list-menu
                 li.item-list-menu
@@ -11,20 +11,21 @@
                 li.item-list-menu
                     a(href="#") Về Chúng tôi
                 li.item-list-menu
-                    a(href="#") Tin Tức 
+                    a(href="#") Tin Tức
                 li.item-list-menu
                     a(href="#") Liên hệ
-     
-                
+
+
 
     .header-right
         .search
-            input(type="text" placeholder="Tìm kiếm")
-            a(href="#") 
-                
+            form.search-form-header
+                input(type="text" placeholder="Tìm kiếm").input-search
+                a(href="#").button-search
+                    i.fas.fa-search.header-right__icon
         .avatar
-            a(href="#")
-                div icon
+            a(href="#").user-header
+                i.fas.fa-user.header-right__icon
         .cart
-            a(href="#")
-                div icon
+            a(href="#").cart-header
+                i.fas.fa-cart-arrow-down.header-right__icon
