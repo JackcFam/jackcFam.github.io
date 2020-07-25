@@ -667,7 +667,7 @@ body {
 }
 
 .header-left__icon {
-  color: #78c225;
+  color: #666666;
   font-size: 1.8rem;
 }
 
@@ -927,7 +927,7 @@ input#clonemenu-mobile:checked ~ nav.header-right__main-menu {
 }
 
 div#header__user p {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .user__box {
@@ -941,8 +941,6 @@ div#header__user p {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-size: 2rem;
   line-height: 2.3rem;
   background-color: var(--color-grey-11);
   color: var(--color-grey);
@@ -970,7 +968,7 @@ div#header__user p {
 
 .group-input > .error {
   font-size: 1.4rem;
-  color: #78c225;
+  color: red;
 }
 
 .group-input {

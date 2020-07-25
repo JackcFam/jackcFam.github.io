@@ -55,7 +55,7 @@
 }
 
 .input-wraper .error {
-  color: #78c225;
+  color: red;
 }
 .input-wraper select {
   margin-bottom: 0.5rem;
