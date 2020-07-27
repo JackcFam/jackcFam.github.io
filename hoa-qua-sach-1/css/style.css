@@ -251,7 +251,7 @@ img.layer-anh-nen {
 }
 
 .quang-cao-goi-san-pham {
-  max-width: 500px;
+  max-width: 100%;
   height: 300px;
   border: 2px solid #78c225;
   padding: 20px;
@@ -323,7 +323,7 @@ a.image-khuyen-mai img {
   border: 2px solid #78c225;
   padding: 20px;
   cursor: pointer;
-  max-width: 500px;
+  max-width: 100%;
   height: 300px;
   margin-bottom: 30px;
 }
