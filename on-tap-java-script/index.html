@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Bài 1: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Huy'', gender: ''Male'', age: 20 }.Viết hàm tính ra số tuổi trung bình của toàn bộ sinh viên.
+        function ageTB(arr) {
+            let sum = 0;
+            for (let i = 0; i < arr.length; i++) {
+                sum += arr[i].age;
+            }
+            return sum / arr.length;
+        }
+        console.log(
+            ageTB([{
+                    name: "Huy",
+                    gender: "Male",
+                    age: 25
+                },
+                {
+                    name: "Huy",
+                    gender: "Male",
+                    age: 30
+                },
+                {
+                    name: "Huy",
+                    gender: "Male",
+                    age: 35
+                }
+            ])
+        );
+
+        // Bài 2: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Huy'', gender: ''Male'', age: 20 }.Viết hàm sắp xếp lại mảng trên theo tuổi học viên từ cao đến thấp.
+        function sapxepAge(arr) {
+            return arr.sort((a, b) => b.age - a.age);
+        }
+        console.log(sapxepAge([{
+                name: "Huy",
+                gender: "Male",
+                age: 25
+            },
+            {
+                name: "Huy",
+                gender: "Male",
+                age: 40
+            },
+            {
+                name: "Huy",
+                gender: "Male",
+                age: 35
+            }
+        ]))
+        // Bài 3: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Huy'', gender: ''Male'', age: 20 }.Viết hàm sắp xếp lại mảng trên theo tên học viên(không phân biệt hoa thường).
+        function sapxepName(arr) {
+            return arr.sort((a, b) => {
+                let a1 = a.name.toLowerCase();
+                let a2 = b.name.toLowerCase();
+                if (a1 > a2) return 1;
+                if (a1 < a2) return -1;
+                return 0;
+            });
+        }
+        console.log(sapxepName([{
+                name: "Binh",
+                gender: "Male",
+                age: 35
+            },
+            {
+                name: "cường",
+                gender: "Male",
+                age: 25
+            },
+            {
+                name: "An",
+                gender: "Male",
+                age: 40
+            },
+            {
+                name: "Huy",
+                gender: "Male",
+                age: 35
+            },
+            {
+                name: "Binh",
+                gender: "Male",
+                age: 20
+            },
+        ]));
+        // Bài 4: Cho 1 mảng các object chứa thông tin sinh viên dạng { name: ''Huy'', gender: ''Male'', age: 20 }.Viết hàm lọc ra những sinh viên nào có tên bắt đầu bằng chữ ''H'' hoặc ''h''.
+        function filterH(arr) {
+            return arr.filter(function (student) {
+                let x = student.name.slice(0, 1);
+                if (x == "H" || x == "h")
+                    return student;
+            });
+        }
+        console.log(
+            filterH([{
+                    name: "Huy",
+                    gender: "Male",
+                    age: 25
+                },
+                {
+                    name: "An",
+                    gender: "Male",
+                    age: 30
+                },
+                {
+                    name: "huy",
+                    gender: "Male",
+                    age: 30
+                },
+                {
+                    name: "Duy",
+                    gender: "Male",
+                    age: 30
+                },
+                {
+                    name: "Hang",
+                    gender: "Male",
+                    age: 35
+                }
+            ])
+        );
+    </script>
+</body>
+
+</html>
