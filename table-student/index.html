@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list Student</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;577;600;700;800;900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="font-family: 'Oxygen', sans-serif;">
+    <div class="wrap">
+        <h2>Lists Student</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Họ Tên</th>
+                    <th>Năm sinh</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="#" class="delete" data-target="#delete" data-toggle="modal"><i
+                                class="fas fa-trash"></i></a>
+                    </td>
+                    <td>Phạm Ngọc Nhật</td>
+                    <td>1997</td>
+                    <td>phamnhat05111997@gmail.com</td>
+                    <td>0389172863</td>
+                    <td>
+                        <a href="update.html" class="chinhsua">Chỉnh
+                            sửa</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="delete" data-target="#delete" data-toggle="modal"><i
+                                class="fas fa-trash"></i></a>
+                    </td>
+                    <td>Nguyễn Văn An</td>
+                    <td>1986</td>
+                    <td>nguyenvanan@gmail.com</td>
+                    <td>0329145432</td>
+                    <td>
+                        <a href="update.html" class="chinhsua">Chỉnh
+                            sửa</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="delete" data-target="#delete" data-toggle="modal"><i
+                                class="fas fa-trash"></i></a>
+                    </td>
+                    <td>Phạm Trung Hiếu</td>
+                    <td>1996</td>
+                    <td>phamtrunghieu96@gmail.com</td>
+                    <td>0319172741</td>
+                    <td>
+                        <a href="update.html" class="chinhsua">Chỉnh
+                            sửa</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="delete" data-target="#delete" data-toggle="modal"><i
+                                class="fas fa-trash"></i></a>
+                    </td>
+                    <td>Trần Huy Sơn</td>
+                    <td>1998</td>
+                    <td>tranhuysong@gmail.com</td>
+                    <td>0349172801</td>
+                    <td>
+                        <a href="update.html" class="chinhsua">Chỉnh
+                            sửa</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="delete" data-target="#delete" data-toggle="modal"><i
+                                class="fas fa-trash"></i></a>
+                    </td>
+                    <td>Nguyễn Phương Lan</td>
+                    <td>1995</td>
+                    <td>nguyenphuonglan@gmail.com</td>
+                    <td>0379199995</td>
+                    <td>
+                        <a href="update.html" class="chinhsua">Chỉnh
+                            sửa</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" class="delete" data-target="#delete" data-toggle="modal"><i
+                                class="fas fa-trash"></i></a>
+                    </td>
+                    <td>Trần Bảo Vân</td>
+                    <td>2001</td>
+                    <td>tranbaovan@gmail.com</td>
+                    <td>0331662861</td>
+                    <td>
+                        <a href="update.html" class="chinhsua">Chỉnh
+                            sửa</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có muốn chỉnh sửa thông tin sinh viên ?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có muốn xóa?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-student">
+            <a href="addstudent.html" class="btn-add"><i class="fas fa-user-plus"></i> &nbsp;Add Student</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/c6304979ba.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
