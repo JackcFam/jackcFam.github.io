@@ -31,7 +31,7 @@ $(function () {
           <td>${user.email}</td>
           <td>${user.phone}</td>
           <td>
-            <a href="/edit.html?id=1" class="text-info"
+            <a href="/edit.html?id=${user.id}" class="text-info"
               ><i class="fa fa-edit"></i> Chỉnh sửa</a
             >
             |
@@ -39,8 +39,9 @@ $(function () {
             class = "text-danger"
             data-toggle = "modal"
             data-target = "#exampleModal"
-              ><i class="fa fa-trash-alt"></i> Xóa</a
-            >
+              >
+              <i class="fa fa-trash-alt"></i> Xóa
+              </a>
           </td>
         </tr>`;
     }
