@@ -3,26 +3,6 @@ $(function () {
     url: "http://localhost:3000/users",
   }).done(function (users) {
     let htmlString = "";
-
-    // Dùng vòng lặp for i
-    // for (let i = 0; i < users.length; i++) {
-    //   htmlString += `<tr>
-    //     <td>${users[i].name}</td>
-    //     <td>${users[i].birthday}</td>
-    //     <td>wtribe0@kickstarter.com</td>
-    //     <td>867-130-6017</td>
-    //     <td>
-    //       <a href="/edit.html?id=1" class="text-info"
-    //         ><i class="fa fa-edit"></i> Chỉnh sửa</a
-    //       >
-    //       |
-    //       <a href="javascript:void(0)" class="text-danger"
-    //         ><i class="fa fa-trash-alt"></i> Xóa</a
-    //       >
-    //     </td>
-    //   </tr>`;
-    // }
-
     // Dùng vòng lặp for of
     for (let user of users) {
       htmlString += `<tr>
@@ -37,8 +17,7 @@ $(function () {
             |
             <a a href = "javascript:void(0)"
             class = "text-danger"
-            data-toggle = "modal"
-            data-target = "#exampleModal"
+            onclick = "confirmDelete(${user.id})"
               >
               <i class="fa fa-trash-alt"></i> Xóa
               </a>
@@ -51,6 +30,38 @@ $(function () {
   });
 });
 
-function deleteUserAPI() {
+let idStudent = 0;
 
+function confirmDelete(id) {
+  studentId = id;
+  console.log(studentId);
+  $("#exampleModal").modal("show");
+}
+
+function deleteStudent() {
+  $.ajax({
+      url: "http://localhost:3000/users/" + studentId,
+      method: "DELETE"
+    })
+    .done(function (result) {
+      // C1: Tải lại trang
+      const tdElement = $('.text-danger').parent();
+      const trElement = tdElement.parent();
+      trElement.remove();
+      $("#exampleModal").modal("hide");
+      location.reload();
+      // C2: Không tải lại trang
+      // Lấy lại danh sách users, sau đó render lại table => Tốn thời gian lấy lại danh sách users
+
+      // C3: Không tải lại trang
+      // Dòng DOM để xóa
+
+    })
+    .fail(function (err) {
+      if (err.status == 404) {
+        alert("Hoc vien khong ton tai");
+      } else {
+        alert("Khong xoa duoc");
+      }
+    });
 }
