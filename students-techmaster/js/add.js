@@ -9,6 +9,6 @@ function createUser() {
             phone: $('#phone').val()
         }
     }).done(function () {
-        if (true) window.location.href = '/';
+        window.location.href = '/';
     })
 }
