@@ -21,6 +21,7 @@ const PRODUCT = [
 ]
 
 
+
 ReactDOM.render(
     <main>
   <Header numberItems={sumItems()} title="Shopping cart 1"></Header>
