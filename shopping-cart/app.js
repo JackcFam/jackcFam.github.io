@@ -1,86 +1,42 @@
+
+
+
+const PRODUCT = [
+  {id: 1,
+    name: 'Product1',
+    description: 'Descript1',
+    image: 'https://www.myjewishlearning.com/wp-content/uploads/2009/04/dog.jpg',
+    price: 10,
+    quantity: 200
+
+  },
+  {id: 2,
+    name: 'Product1',
+    description: 'Descript1',
+    image: 'https://via.placeholder.com/200x150',
+    price: 20,
+    quantity: 250
+
+  }
+]
+
+
 ReactDOM.render(
     <main>
-  <header className="container">
-    <h1>Shopping Cart</h1>
-    <ul className="breadcrumb">
-      <li>Home</li>
-      <li>Shopping Cart</li>
-    </ul>
-    <span className="count">3 items in the bag</span>
-  </header>
-  <section className="container">
-    <ul className="products">
-      <li className="row">
-        <div className="col left">
-          <div className="thumbnail">
-            <a href="#">
-              <img src="https://via.placeholder.com/200x150" alt />
-            </a>
-          </div>
-          <div className="detail">
-            <div className="name"><a href="#">PRODUCT ITEM NUMBER 1</a></div>
-            <div className="description">
-              Description for product item number 1
-            </div>
-            <div className="price">$5.99</div>
-          </div>
-        </div>
-        <div className="col right">
-          <div className="quantity">
-            <input type="number" className="quantity" step={1} defaultValue={2} />
-          </div>
-          <div className="remove">
-            <svg version="1.1" className="close" xmlns="//www.w3.org/2000/svg" xmlnsXlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enableBackground="new 0 0 60 60" xmlSpace="preserve">
-              <polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812" />
-            </svg>
-          </div>
-        </div>
-      </li>
-      <li className="row">
-        <div className="col left">
-          <div className="thumbnail">
-            <a href="#">
-              <img src="https://via.placeholder.com/200x150" alt />
-            </a>
-          </div>
-          <div className="detail">
-            <div className="name"><a href="#">PRODUCT ITEM NUMBER 2</a></div>
-            <div className="description">
-              Description for product item number 2
-            </div>
-            <div className="price">$9.99</div>
-          </div>
-        </div>
-        <div className="col right">
-          <div className="quantity">
-            <input type="number" className="quantity" step={1} defaultValue={1} />
-          </div>
-          <div className="remove">
-            <svg version="1.1" className="close" xmlns="//www.w3.org/2000/svg" xmlnsXlink="//www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" enableBackground="new 0 0 60 60" xmlSpace="preserve">
-              <polygon points="38.936,23.561 36.814,21.439 30.562,27.691 24.311,21.439 22.189,23.561 28.441,29.812 22.189,36.064 24.311,38.186 30.562,31.934 36.814,38.186 38.936,36.064 32.684,29.812" />
-            </svg>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </section>
-  <section className="container">
-    <div className="promotion">
-      <label htmlFor="promo-code">Have A Promo Code?</label>
-      <input type="text" id="promo-code" /> <button type="button" />
-    </div>
-    <div className="summary">
-      <ul>
-        <li>Subtotal <span>$21.97</span></li>
-        <li>Tax <span>$5.00</span></li>
-        <li className="total">Total <span>$26.97</span></li>
-      </ul>
-    </div>
-    <div className="checkout">
-      <button type="button">Check Out</button>
-    </div>
-  </section>
+  <Header numberItems={100} title="Shopping cart 1"></Header>
+  <Header numberItems={200} title="Shopping cart 2"></Header>
+  <Header numberItems={300} title="Shopping cart 3"></Header>
+  <Body products={PRODUCT}></Body>
+  <FooterComponent Subtotal={tinhTien()} tax={tinhTien()*10/100} Total ={26}></FooterComponent>
 </main>
 ,
     document.getElementById('root')
 );
+
+function tinhTien() {
+  let tong =0;
+  for(let i = 0; i < PRODUCT.length; i++) {
+      tong += PRODUCT[i].price*PRODUCT[i].quantity;
+  }
+  return tong;
+}
