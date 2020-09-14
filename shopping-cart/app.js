@@ -23,9 +23,7 @@ const PRODUCT = [
 
 ReactDOM.render(
     <main>
-  <Header numberItems={100} title="Shopping cart 1"></Header>
-  <Header numberItems={200} title="Shopping cart 2"></Header>
-  <Header numberItems={300} title="Shopping cart 3"></Header>
+  <Header numberItems={sumItems()} title="Shopping cart 1"></Header>
   <Body products={PRODUCT}></Body>
   <FooterComponent Subtotal={tinhTien()} tax={tinhTien()*10/100} Total ={26}></FooterComponent>
 </main>
@@ -39,4 +37,11 @@ function tinhTien() {
       tong += PRODUCT[i].price*PRODUCT[i].quantity;
   }
   return tong;
+}
+function sumItems() {
+  let items = 0;
+  for(let i = 0; i < PRODUCT.length; i++) {
+    items += 1;
+  }
+  return items;
 }

@@ -9,7 +9,7 @@ function Header(props) {
         <li>Home</li>
         <li>Shopping Cart</li>
       </ul>
-      <span className="count">3 items in the bag</span>
+  <span className="count">{props.numberItems} items</span>
     </header>
   );
 }
