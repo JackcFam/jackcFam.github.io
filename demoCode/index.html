@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: lightblue;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vh;
+        height: 100vh;
+        transition: all 1s ease-in-out;
+      }
+      h1 {
+        border-bottom: 2px solid #fff;
+        font-family: tahoma;
+        color: deeppink;
+      }
+      body:hover h1 {
+        background-color: deeppink;
+        color: white;
+        transition: all 1s linear;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Javascript Test</h1>
+    <script>
+      // dem cac chu so le
+      function dem(arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+          if (typeof arr[i] === "number" && arr[i] % 2 != 0) {
+            count++;
+          }
+        }
+        return count;
+      }
+      // tìm vị trí của phần tử bằng 9 lần thứ 3
+      function timvitri(arr) {
+        let array = [1, 9, 3, 4, 5, 6, 9, 0, 6.5, 6, 43, 4, 2, 32, 3, 4, 5, 9];
+        let count = 0;
+        let ketQua;
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] === 9) {
+            count++;
+            if (count === 3) {
+              ketQua = i;
+            }
+          }
+        }
+
+        return ketQua;
+      }
+      // CHUYEN DOI HE CO SO 16 SANG CO SO 2(1101001001010)
+      function chuyenDoiCoSo(stringNumber) {
+        let newString = stringNumber.toUpperCase().split("");
+        let newArray = newString.reverse();
+        let newArray1 = [];
+        for (let i = 0; i < newArray.length; i++) {
+          let dex = parseInt(newArray[i], 16);
+          newArray1.push(dex);
+        }
+        let sum10 = 0;
+        for (let j = 0; j < newArray1.length; j++) {
+          sum10 += newArray1[j] * Math.pow(16, j);
+        }
+        return sum10.toString(2);
+      }
+      // tìm phần tử lớn nhất và bé nhất trong mảng
+      function minMax(arr) {
+        let min, max;
+        let newArray = arr.sort(function (a, b) {
+          return a - b;
+        });
+        min = newArray[0];
+        max = newArray[newArray.length - 1];
+        return { min: min, max: max };
+      }
+      // tính tổng các số chia hết hết cho 5 và nhỏ hơn n của số n chuyền vào// ví dụ;
+      //n =13 thì return 0+5+10 = 15; n là số nguyên dương Integer
+      function sumFPT(n) {
+        let sum = 0;
+        for (let i = 1; i <= n; i++) {
+          if (i % 5 == 0 && i < n) {
+            sum += i;
+          }
+        }
+        return sum;
+      }
+      // bài tập tìm số phần tử bị lặp trong mảng
+      //vd A = [1,2,3,4,5,6,2,3,5] => {2,2}, {3,3}, {5,5} : 3
+      function testLoopsFPT(arr) {
+        let count = 0;
+        let newArray = [];
+        for (let i = 0; i < arr.length; i++) {
+          // kiểm tra xem phần tử của mảng arr có trong mảng newArray không nếu không có thì thêm vào mảng newArray còn nếu tồn tại rồi thì tăng số lần lặp lên sau mỗi lần lặp
+          let begin = newArray.indexOf(arr[i]);
+          if (begin === -1) {
+            newArray.push(arr[i]);
+          } else {
+            count++;
+          }
+        }
+        console.log(newArray);
+        return count;
+      }
+      //cách 2
+      function bai1(arr) {
+        let newArr = [];
+
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+          let arrFilter = newArr.filter((value) => value == arr[i]);
+
+          if (arrFilter.length == 1) {
+            sum += 1;
+          } else {
+            newArr.push(arr[i]);
+          }
+        }
+        return sum;
+      }
+    </script>
+  </body>
+</html>

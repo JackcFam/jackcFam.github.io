@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu-da-cap-ngang</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-image: linear-gradient(
+          to right top,
+          #051937,
+          #004d7a,
+          #008793,
+          #00bf72,
+          #a8eb12
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+      }
+      a {
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        color: red;
+      }
+      ul {
+        padding-left: 0;
+        list-style-type: none;
+      }
+      .menu-level1 > li,
+      .menu-level2 > li {
+        display: inline-block;
+        position: relative;
+      }
+      .menu-level2 {
+        position: absolute;
+        left: 0;
+        background: #ffffff;
+        width: 500px;
+        display: none;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      .menu-level1 > li:hover .menu-level2 {
+        display: flex;
+      }
+      .menu-title {
+        padding: 15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ul class="menu-level1">
+      <li class="list-menu-items">
+        <a href="#">
+          <i class="fas fa-home"></i>
+        </a>
+      </li>
+      <li class="list-menu-items">
+        <a href="#">Nhạc Cá Nhân</a>
+      </li>
+      <li class="list-menu-items">
+        <a href="#"> #zingchart </a>
+        <ul class="menu-level2">
+          <li class="list-menu-items2">
+            <span class="menu-title">ZingChart</span>
+            <ul>
+              <li><a href="#">Bài Hát</a></li>
+              <li><a href="#">MV</a></li>
+            </ul>
+          </li>
+          <li class="list-menu-items2">
+            <span class="menu-title">Tuần</span>
+            <ul>
+              <li><a href="#">Bài Hát</a></li>
+              <li><a href="#">MV</a></li>
+              <li><a href="#">Album</a></li>
+            </ul>
+          </li>
+          <li class="list-menu-items2">
+            <span class="menu-title">US-UK CHART</span>
+            <ul>
+              <li><a href="#">Bài Hát</a></li>
+              <li><a href="#">MV</a></li>
+              <li><a href="#">Album</a></li>
+            </ul>
+          </li>
+          <li class="list-menu-items2">
+            <span class="menu-title">KPOP CHART</span>
+            <ul>
+              <li><a href="#">Bài Hát</a></li>
+              <li><a href="#">MV</a></li>
+              <li><a href="#">Album</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="list-menu-items">
+        <a href="#">Top 100</a>
+        <ul class="menu-level2">
+          <li class="list-menu-items2">
+            <span class="menu-title">Việt NAM</span>
+            <ul>
+              <li><a href="#">Nhạc trẻ</a></li>
+              <li><a href="#">Nhạc trữ tình</a></li>
+              <li><a href="#">Nhạc đỏ</a></li>
+              <li><a href="#">Nhạc Rock</a></li>
+              <li><a href="#">Nhạc Cách Mạng</a></li>
+            </ul>
+          </li>
+          <li class="list-menu-items2">
+            <span class="menu-title">Âu Mỹ</span>
+            <ul>
+              <li><a href="#">Rock</a></li>
+              <li><a href="#">Dance</a></li>
+              <li><a href="#">Pop</a></li>
+              <li><a href="#">Country</a></li>
+            </ul>
+          </li>
+          <li class="list-menu-items2">
+            <span class="menu-title">Châu á</span>
+            <ul>
+              <li><a href="#">Hàn Quốc</a></li>
+              <li><a href="#">Nhật Bản</a></li>
+              <li><a href="#">Trung Quốc</a></li>
+            </ul>
+          </li>
+          <li class="list-menu-items2">
+            <span class="menu-title">Hòa Tấu</span>
+            <ul>
+              <li><a href="#">Piano</a></li>
+              <li><a href="#">Guitar</a></li>
+              <li><a href="#">Saxophone</a></li>
+              <li><a href="#">Rap</a></li>
+              <li><a href="#">Hip Hop</a></li>
+              <li><a href="#">Country</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
