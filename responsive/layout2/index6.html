@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,58 +8,71 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     <style>
-        *{
+        * {
             box-sizing: border-box;
             padding: 0;
             margin: 0;
         }
 
-        .nav{
+        .nav {
             width: 80%;
             margin: 15px auto;
             height: 80px;
             overflow: hidden;
             transition: all 0.3s ease;
+
         }
-        .container{
+        .container-logo{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+            align-items: center;
+        }
+        .container {
             width: 80%;
             margin: auto;
         }
-        .under{
+
+        .under {
             width: 100%;
             background-color: aqua;
             border: 2px solid black;
             height: 30vh;
         }
-        .logo{
-            display: none;
+
+        .logo {
+            display: inline-block;
             border: 2px solid black;
-            height: 50px;
+            height: 40px;
             text-align: center;
-            line-height: 50px;
+            line-height: 40px;
             background-color: pink;
         }
 
-        .logo a{
+        .logo a {
             display: inline-block;
             text-decoration: none;
             padding: 0 10px;
             color: black;
 
 
+
         }
-        .nav-btn{
+
+        .nav-btn {
             padding: 5px 10px;
             border: 2px solid black;
             background-color: darkcyan;
             margin: 15px 0;
             color: white;
-            display: block;
+            display: inline-block;
         }
-        .nav-btn:focus{
+
+        .nav-btn:focus {
             outline: none;
         }
-        .menu{
+
+        .menu,.signup {
             list-style: none;
             max-width: 100%;
             background-color: darkcyan;
@@ -66,36 +80,46 @@
             margin: auto;
 
         }
-        .list-menu{
+
+        .list-menu, .list-sign {
             border: 2px solid black;
             height: 30px;
             line-height: 30px;
             color: white;
         }
-        .menu .list-menu:not(:last-child){
+        .menu .list-menu:last-child{
             border-bottom: 0;
         }
+        .menu .list-menu:not(:last-child), .signup .list-sign:not(:last-child) {
+            border-bottom: 0;
+        }
+
         @media (min-width: 600px) {
-            .nav{
+            .nav {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 height: 60px !important;
             }
-            .nav-btn{
+
+            .nav-btn {
                 display: none;
             }
-            .logo{
-                display: block;
+
+            .signup{
+                background-color: pink;
+                display: flex;
+                border: 2px solid black;
+                margin: 0;
             }
-            .menu{
+            .menu {
                 display: flex;
                 flex-flow: row nowrap;
                 align-items: center;
                 margin: 0;
                 border: 2px solid black;
             }
-            .list-menu{
+            .list-menu {
                 width: 80px;
                 height: 35px;
                 line-height: 35px;
@@ -103,13 +127,23 @@
                 position: relative;
                 border: 0
             }
-            .list-menu:first-child{
+
+            .list-menu:first-child {
                 display: none;
             }
-            .list-menu:hover{
+
+            .list-sign:hover,.list-menu:hover {
                 color: red;
             }
-            .list-menu:not(:last-child)::after{
+            .list-sign{
+                border: 0;
+                width: 80px;
+                position: relative;
+                color: black;
+                height: 35px;
+                line-height: 35px;
+            }
+            .list-menu:not(:last-child)::after,.list-sign:not(:last-child)::after {
                 position: absolute;
                 display: block;
                 width: 2px;
@@ -119,20 +153,31 @@
                 right: 0;
                 top: 5px;
             }
+            .container-logo{
+                display: flex;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="nav">
-        <div class="logo">
-            <a href="#">LOGO</a>
+        <div class="container-logo">
+            <button class="nav-btn"><i class="fas fa-bars fa-3x"></i></button>
+            <div class="logo">
+                <a href="#">LOGO</a>
+            </div>
         </div>
-        <button class="nav-btn"><i class="fas fa-bars fa-3x"></i></button>
+
         <ul class="menu">
             <li class="list-menu">Trang chủ</li>
             <li class="list-menu">Menu 1</li>
             <li class="list-menu">Menu 2</li>
             <li class="list-menu">Menu 3</li>
+        </ul>
+        <ul class="signup">
+            <li class="list-sign">Login</li>
+            <li class="list-sign">Register</li>
         </ul>
     </div>
     <div class="container">
@@ -140,18 +185,18 @@
     </div>
     <script>
         let menuBtn = document.querySelector('.nav-btn');
-            let dropMenu = document.querySelector('.nav');
-            let trigger = true;
+        let dropMenu = document.querySelector('.nav');
+        let trigger = true;
 
-            menuBtn.addEventListener('click', () => {
-                if (trigger) {
-                    dropMenu.style.height = '210px';
-                    trigger = false;
-                } else {
-                    dropMenu.style.height = '80px';
-                    trigger = true;
-                }
-            });
+        menuBtn.addEventListener('click', () => {
+            if (trigger) {
+                dropMenu.style.height = '280px';
+                trigger = false;
+            } else {
+                dropMenu.style.height = '80px';
+                trigger = true;
+            }
+        });
     </script>
 </body>
 </html>
