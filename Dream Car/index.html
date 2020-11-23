@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Javascript</title>
+  </head>
+  <body>
+    <h1>Test Javascript</h1>
+    <script>
+      //Một hình chữ nhật trên hệ tọa độ có cạnh song song với 2 trục x, y có thể được định nghĩa bằng 2 cặp số (x1, y1, x2, y2) tương ứng với tọa độ góc dưới bên trái và góc trên bên phải của nó
+      //Cho 2 bộ số (x1, y1, x2, y2) và (x3, y3, x4, y4), tính diện tích phần giao nhau của 2 hình chữ nhật định nghĩa bởi 2 bộ số này.
+      function reactangleChallenge(x1, y1, x2, y2, x3, y3, x4, y4) {
+        function tinhDoDai(a, b, c, d) {
+              let x = Math.sqrt(Math.pow(c - a, 2) + Math.pow(d - b, 2));
+              return Math.abs(x)
+          }
+        if(x1 < x2 && y1 < y2 && x3 < x4 && y3 < y4 && x1 >= -50 && x1 <= 50 && x2>=-50 && x2 <=50 && y1 >= -50 && y1 <= 50 && y2 >= -50 && y2 <= 50 && y3 >= -50 && y3 <= 50 && y4 >= -50 && y4 <= 50 && x3 >= -50 && x3 <= 50 && x4 >= -50 && x4 <= 50) {
+            // gọi w1,h1,w2,h2 lần lượt là các cạnh đáy và chiều cao của 2 hình chữ nhật
+            let w1 = tinhDoDai(x1, y2, x2, y2);
+            let h1 = tinhDoDai(x1, y2, x1, y1);
+            let w2 = tinhDoDai(x3, y4, x4, y4);
+            let h2 = tinhDoDai(x3, y4, x3, y3);
+            let chieuRong, chieuDai, dienTich;
+            //điều kiện để 2 hình chữ nhật giao nhau
+            if (
+                x1 + w1 >= x3 &&
+                x3 + w2 >= x1 &&
+                y2 + w1 >= y4 &&
+                y4 + w2 >= y2
+            ) {
+                //chieu dai , chieu rong cua hinh chu nhat giao nhau
+                chieuRong = Math.abs(Math.max(x1, x3) - Math.min(x1 + w1, x3 + w2));
+                chieuDai = Math.abs(Math.max(y2, y4) - Math.min(y2 + w1, y4 + w2));
+                return dienTich = chieuDai * chieuRong;
+            }
+        } else {
+            return;
+        }
+      }
+      console.log("dien tich: " + reactangleChallenge(0,0,4,3,0,0,6,2.5));
+    </script>
+  </body>
+</html>
